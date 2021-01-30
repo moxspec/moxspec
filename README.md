@@ -1,9 +1,9 @@
 MoxSpec
 ===
 
-[![CircleCI](https://circleci.com/gh/actapio/moxspec.svg?style=shield&circle-token=10c3a19b68e72b4327c8fbc4941b0e29450ebff3)](https://circleci.com/gh/actapio/moxspec)
-[![Maintainability](https://api.codeclimate.com/v1/badges/a7ff129d861298b05fc8/maintainability)](https://codeclimate.com/repos/5fee3fb414421167c9003bda/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a7ff129d861298b05fc8/test_coverage)](https://codeclimate.com/repos/5fee3fb414421167c9003bda/test_coverage)
+[![CircleCI](https://circleci.com/gh/actapio/moxspec.svg?style=shield&circle-token=1989e1b4d727682e9f80a6fabe13110c282f168c)](https://circleci.com/gh/actapio/moxspec)
+[![Maintainability](https://api.codeclimate.com/v1/badges/5492dc939c4a22157f4c/maintainability)](https://codeclimate.com/repos/6015659fc02da6014c007b18/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/5492dc939c4a22157f4c/test_coverage)](https://codeclimate.com/repos/6015659fc02da6014c007b18/test_coverage)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 # What is MoxSpec
