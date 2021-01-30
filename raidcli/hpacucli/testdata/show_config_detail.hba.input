@@ -1,0 +1,461 @@
+Smart HBA H240ar in Slot 0 (Embedded) (RAID Mode)
+   Bus Interface: PCI
+   Slot: 0
+   Serial Number: PDNLN0BRH8O054
+   Cache Serial Number: PDNLN0BRH8O054
+   RAID 6 (ADG) Status: Disabled
+   Controller Status: OK
+   Hardware Revision: B
+   Firmware Version: 6.60
+   Rebuild Priority: High
+   Surface Scan Delay: 3 secs
+   Surface Scan Mode: Idle
+   Queue Depth: Automatic
+   Monitor and Performance Delay: 60  min
+   Elevator Sort: Enabled
+   Degraded Performance Optimization: Disabled
+   Inconsistency Repair Policy: Disabled
+   Wait for Cache Room: Disabled
+   Surface Analysis Inconsistency Notification: Disabled
+   Post Prompt Timeout: 15 secs
+   Cache Board Present: False
+   Drive Write Cache: Disabled
+   Total Cache Size: 256 MB
+   SATA NCQ Supported: True
+   Spare Activation Mode: Activate on physical drive failure (default)
+   Controller Temperature (C): 52
+   Number of Ports: 2 Internal only
+   Encryption: Disabled
+   Encryption Login Status: Not Logged In
+   Encryption Allow Plaintext Volumes: Disallow
+   Encryption Key Management Mode: Not Set
+   Encryption Supported: True
+   Encryption RTC SRAM Status: Passed
+   Encryption Master Key reset in Progress: False
+   Encryption Local Key Cache Enabled: False
+   Encryption Crypto Officer Password: Not Set
+   Encryption User Password: Not Set
+   Encryption License Installed: True
+   Encryption FW Locked for Update: Unlocked
+   Encryption Controller Password: Not Set
+   Encryption Local Key Cache Supported: True
+   Encryption Controller Locked: Unlocked
+   Encryption Has Suspended Controller Password: False
+   Encryption Controller Password Unlock Attempts Remaining: 0
+   Encryption Logical Drive(s) Locked For Missing Controller Password: False
+   Encryption Password Recovery Parameters Set: False
+   Encryption Master Key: Not Set
+   Encryption Remote Mode Master Key Mismatch: False
+   Encryption/HP SSD Smart Path Mixing Supported: True
+   Encryption/HP SmartCache Mixing Supported: False
+   Driver Name: hpsa
+   Driver Version: 3.4.10
+   Driver Supports HP SSD Smart Path: True
+   Negotiated PCIe Data Rate: PCIe 3.0 x8 (7880 MB/s)
+   Controller Mode: RAID Mode
+   Controller Mode Reboot: Not Required
+   Latency Scheduler Setting: Disabled
+   Current Power Mode: MaxPerformance
+
+
+   12G SAS Exp Card at Port 1I, Box 1, OK
+      Power Supply Status: Not Redundant
+      Vendor ID: HP
+      Serial Number: PDNRB0AZT8C1N3
+      Firmware Version: 2.09
+      Drive Bays: 28
+      Port: 1I
+      Box: 1
+      Location: Internal
+
+   Expander 378
+      Device Number: 378
+      Firmware Version: 2.09
+      WWID: 50014380345562FD
+      Port: 1I
+      Box: 1
+      Vendor ID: HP
+
+   Enclosure SEP (Vendor ID HP, Model 12G SAS Exp Card) 377
+      Device Number: 377
+      Firmware Version: 2.09
+      WWID: 50014380345562FC
+      Port: 1I
+      Box: 1
+      Vendor ID: HP
+      Model: 12G SAS Exp Card
+
+   Physical Drives
+Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:1 (port 1I:box 1:bay 1, SATA, 4000.7 GB, OK)
+Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:2 (port 1I:box 1:bay 2, SATA, 4000.7 GB, OK)
+Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:3 (port 1I:box 1:bay 3, SATA, 4000.7 GB, OK)
+Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:4 (port 1I:box 1:bay 4, SATA, 4000.7 GB, OK)
+Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:5 (port 1I:box 1:bay 5, SATA, 4000.7 GB, OK)
+Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:6 (port 1I:box 1:bay 6, SATA, 4000.7 GB, OK)
+Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:7 (port 1I:box 1:bay 7, SATA, 4000.7 GB, OK)
+Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:8 (port 1I:box 1:bay 8, SATA, 4000.7 GB, OK)
+Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:9 (port 1I:box 1:bay 9, SATA, 4000.7 GB, OK)
+Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:10 (port 1I:box 1:bay 10, SATA, 4000.7 GB, OK)
+Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:11 (port 1I:box 1:bay 11, SATA, 4000.7 GB, OK)
+Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:12 (port 1I:box 1:bay 12, SATA, 4000.7 GB, OK)
+
+   Array: A
+      Interface Type: SATA
+      Unused Space: 0  MB
+      Status: OK
+      MultiDomain Status: OK
+      Array Type: Data
+      HP SSD Smart Path: disable
+
+
+
+      Logical Drive: 1
+         Size: 21.8 TB
+         Fault Tolerance: 1+0
+         Heads: 255
+         Sectors Per Track: 32
+         Cylinders: 65535
+         Strip Size: 256 KB
+         Full Stripe Size: 1536 KB
+         Status: OK
+         MultiDomain Status: OK
+         Caching:  Disabled
+         Unique Identifier: 600508B1001C83444F07A3933E3EED4E
+         Disk Name: /dev/sda          Mount Points: /boot 1023 MB Partition Number 3, swap 4.0 GB Partition Number 4, / 21.8 TB Partition Number 5
+         OS Status: LOCKED
+         Logical Drive Label: 01E244A6PDNLN0BRH8O054C8CF
+         Mirror Group 0:
+      Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:1 (port 1I:box 1:bay 1, SATA, 4000.7 GB, OK)
+      Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:2 (port 1I:box 1:bay 2, SATA, 4000.7 GB, OK)
+      Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:3 (port 1I:box 1:bay 3, SATA, 4000.7 GB, OK)
+      Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:4 (port 1I:box 1:bay 4, SATA, 4000.7 GB, OK)
+      Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:5 (port 1I:box 1:bay 5, SATA, 4000.7 GB, OK)
+      Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:6 (port 1I:box 1:bay 6, SATA, 4000.7 GB, OK)
+         Mirror Group 1:
+      Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:7 (port 1I:box 1:bay 7, SATA, 4000.7 GB, OK)
+      Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:8 (port 1I:box 1:bay 8, SATA, 4000.7 GB, OK)
+      Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:9 (port 1I:box 1:bay 9, SATA, 4000.7 GB, OK)
+      Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:10 (port 1I:box 1:bay 10, SATA, 4000.7 GB, OK)
+      Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:11 (port 1I:box 1:bay 11, SATA, 4000.7 GB, OK)
+      Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:12 (port 1I:box 1:bay 12, SATA, 4000.7 GB, OK)
+         Drive Type: Data
+         LD Acceleration Method: All disabled
+
+      physicaldrive 1I:1:1
+         Port: 1I
+         Box: 1
+         Bay: 1
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SATA
+         Size: 4000.7 GB
+         Native Block Size: 512
+         Rotational Speed: 7200
+         Firmware Revision: HPG3
+         Serial Number: P4H52J7C
+         Model: ATA     MB4000GCWLV
+         SATA NCQ Capable: True
+         SATA NCQ Enabled: True
+         Current Temperature (C): 36
+         Maximum Temperature (C): 38
+         PHY Count: 1
+         PHY Transfer Rate: 6.0Gbps
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+
+      physicaldrive 1I:1:2
+         Port: 1I
+         Box: 1
+         Bay: 2
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SATA
+         Size: 4000.7 GB
+         Native Block Size: 512
+         Rotational Speed: 7200
+         Firmware Revision: HPG3
+         Serial Number: PCJX72XB
+         Model: ATA     MB4000GCWLV
+         SATA NCQ Capable: True
+         SATA NCQ Enabled: True
+         Current Temperature (C): 35
+         Maximum Temperature (C): 39
+         PHY Count: 1
+         PHY Transfer Rate: 6.0Gbps
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+
+      physicaldrive 1I:1:3
+         Port: 1I
+         Box: 1
+         Bay: 3
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SATA
+         Size: 4000.7 GB
+         Native Block Size: 512
+         Rotational Speed: 7200
+         Firmware Revision: HPG3
+         Serial Number: PEGBA6TX
+         Model: ATA     MB4000GCWLV
+         SATA NCQ Capable: True
+         SATA NCQ Enabled: True
+         Current Temperature (C): 36
+         Maximum Temperature (C): 40
+         PHY Count: 1
+         PHY Transfer Rate: 6.0Gbps
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+
+      physicaldrive 1I:1:4
+         Port: 1I
+         Box: 1
+         Bay: 4
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SATA
+         Size: 4000.7 GB
+         Native Block Size: 512
+         Rotational Speed: 7200
+         Firmware Revision: HPG3
+         Serial Number: PEGJR3SX
+         Model: ATA     MB4000GCWLV
+         SATA NCQ Capable: True
+         SATA NCQ Enabled: True
+         Current Temperature (C): 34
+         Maximum Temperature (C): 37
+         PHY Count: 1
+         PHY Transfer Rate: 6.0Gbps
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+
+      physicaldrive 1I:1:5
+         Port: 1I
+         Box: 1
+         Bay: 5
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SATA
+         Size: 4000.7 GB
+         Native Block Size: 512
+         Rotational Speed: 7200
+         Firmware Revision: HPG3
+         Serial Number: PCJWS92S
+         Model: ATA     MB4000GCWLV
+         SATA NCQ Capable: True
+         SATA NCQ Enabled: True
+         Current Temperature (C): 34
+         Maximum Temperature (C): 38
+         PHY Count: 1
+         PHY Transfer Rate: 6.0Gbps
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+
+      physicaldrive 1I:1:6
+         Port: 1I
+         Box: 1
+         Bay: 6
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SATA
+         Size: 4000.7 GB
+         Native Block Size: 512
+         Rotational Speed: 7200
+         Firmware Revision: HPG3
+         Serial Number: PCJXJZWS
+         Model: ATA     MB4000GCWLV
+         SATA NCQ Capable: True
+         SATA NCQ Enabled: True
+         Current Temperature (C): 35
+         Maximum Temperature (C): 38
+         PHY Count: 1
+         PHY Transfer Rate: 6.0Gbps
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+
+      physicaldrive 1I:1:7
+         Port: 1I
+         Box: 1
+         Bay: 7
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SATA
+         Size: 4000.7 GB
+         Native Block Size: 512
+         Rotational Speed: 7200
+         Firmware Revision: HPG3
+         Serial Number: P4H560EC
+         Model: ATA     MB4000GCWLV
+         SATA NCQ Capable: True
+         SATA NCQ Enabled: True
+         Current Temperature (C): 33
+         Maximum Temperature (C): 37
+         PHY Count: 1
+         PHY Transfer Rate: 6.0Gbps
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+
+      physicaldrive 1I:1:8
+         Port: 1I
+         Box: 1
+         Bay: 8
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SATA
+         Size: 4000.7 GB
+         Native Block Size: 512
+         Rotational Speed: 7200
+         Firmware Revision: HPG3
+         Serial Number: PEGDRJ9X
+         Model: ATA     MB4000GCWLV
+         SATA NCQ Capable: True
+         SATA NCQ Enabled: True
+         Current Temperature (C): 33
+         Maximum Temperature (C): 36
+         PHY Count: 1
+         PHY Transfer Rate: 6.0Gbps
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+
+      physicaldrive 1I:1:9
+         Port: 1I
+         Box: 1
+         Bay: 9
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SATA
+         Size: 4000.7 GB
+         Native Block Size: 512
+         Rotational Speed: 7200
+         Firmware Revision: HPG3
+         Serial Number: PCJX61MB
+         Model: ATA     MB4000GCWLV
+         SATA NCQ Capable: True
+         SATA NCQ Enabled: True
+         Current Temperature (C): 35
+         Maximum Temperature (C): 37
+         PHY Count: 1
+         PHY Transfer Rate: 6.0Gbps
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+
+      physicaldrive 1I:1:10
+         Port: 1I
+         Box: 1
+         Bay: 10
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SATA
+         Size: 4000.7 GB
+         Native Block Size: 512
+         Rotational Speed: 7200
+         Firmware Revision: HPG3
+         Serial Number: PEGE5ADX
+         Model: ATA     MB4000GCWLV
+         SATA NCQ Capable: True
+         SATA NCQ Enabled: True
+         Current Temperature (C): 34
+         Maximum Temperature (C): 37
+         PHY Count: 1
+         PHY Transfer Rate: 6.0Gbps
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+
+      physicaldrive 1I:1:11
+         Port: 1I
+         Box: 1
+         Bay: 11
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SATA
+         Size: 4000.7 GB
+         Native Block Size: 512
+         Rotational Speed: 7200
+         Firmware Revision: HPG3
+         Serial Number: PEGEATLX
+         Model: ATA     MB4000GCWLV
+         SATA NCQ Capable: True
+         SATA NCQ Enabled: True
+         Current Temperature (C): 35
+         Maximum Temperature (C): 37
+         PHY Count: 1
+         PHY Transfer Rate: 6.0Gbps
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+
+      physicaldrive 1I:1:12
+         Port: 1I
+         Box: 1
+         Bay: 12
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SATA
+         Size: 4000.7 GB
+         Native Block Size: 512
+         Rotational Speed: 7200
+         Firmware Revision: HPG3
+         Serial Number: PEGJKLSX
+         Model: ATA     MB4000GCWLV
+         SATA NCQ Capable: True
+         SATA NCQ Enabled: True
+         Current Temperature (C): 35
+         Maximum Temperature (C): 37
+         PHY Count: 1
+         PHY Transfer Rate: 6.0Gbps
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+
+
+   Enclosure SEP (Vendor ID HP, Model 12G SAS Exp Card) 377
+      Device Number: 377
+      Firmware Version: 2.09
+      WWID: 50014380345562FC
+      Port: 1I
+      Box: 1
+      Vendor ID: HP
+      Model: 12G SAS Exp Card
+
+   Expander 378
+      Device Number: 378
+      Firmware Version: 2.09
+      WWID: 50014380345562FD
+      Port: 1I
+      Box: 1
+      Vendor ID: HP
+

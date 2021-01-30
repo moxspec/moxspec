@@ -1,0 +1,263 @@
+   Array: A
+      Interface Type: SAS
+      Unused Space: 0  MB (0.0%)
+      Used Space: 1.6 TB (100.0%)
+      Status: OK
+      Array Type: Data       HPE SSD Smart Path: disable
+
+
+
+      Logical Drive: 1
+         Size: 838.3 GB
+         Fault Tolerance: 1
+         Heads: 255
+         Sectors Per Track: 32
+         Cylinders: 65535
+         Strip Size: 256 KB
+         Full Stripe Size: 256 KB
+         Status: OK
+         Caching:  Enabled
+         Unique Identifier: 600508B1001C1D5304FB2C93F8990D61
+         Disk Name: /dev/sda 
+         Mount Points: /boot 1024 MB Partition Number 3, /,/var/lib/docker/devicemapper 833.3 GB Partition Number 5
+         OS Status: LOCKED
+         Logical Drive Label: 02F70AD5PDSXK0ARH5I3C166E1
+         Mirror Group 1:
+            physicaldrive 1I:1:1 (port 1I:box 1:bay 1, SAS, 900.1 GB, OK)
+         Mirror Group 2:
+            physicaldrive 1I:1:2 (port 1I:box 1:bay 2, SAS, 900.1 GB, OK)
+         Drive Type: Data
+         LD Acceleration Method: Controller Cache
+
+      physicaldrive 1I:1:1
+         Port: 1I
+         Box: 1
+         Bay: 1
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SAS
+         Size: 900.1 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Rotational Speed: 10500
+         Firmware Revision: HPD3
+         Serial Number: S0N0KTBC0000B410G587
+         Model: HP      EG0900FCVBL
+         Current Temperature (C): 32
+         Maximum Temperature (C): 41
+         PHY Count: 2
+         PHY Transfer Rate: 6.0Gbps, Unknown
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+         Sanitize Erase Supported: True
+         Unrestricted Sanitize Supported: False
+
+      physicaldrive 1I:1:2
+         Port: 1I
+         Box: 1
+         Bay: 2
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SAS
+         Size: 900.1 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Rotational Speed: 10500
+         Firmware Revision: HPD3
+         Serial Number: S0N0JPE60000B4119A66
+         Model: HP      EG0900FCVBL
+         Current Temperature (C): 33
+         Maximum Temperature (C): 42
+         PHY Count: 2
+         PHY Transfer Rate: 6.0Gbps, Unknown
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+         Sanitize Erase Supported: True
+         Unrestricted Sanitize Supported: False
+
+
+   Array: B
+      Interface Type: SAS
+      Unused Space: 0  MB (0.0%)
+      Used Space: 4.9 TB (100.0%)
+      Status: OK
+      Array Type: Data       HPE SSD Smart Path: disable
+
+
+
+      Logical Drive: 2
+         Size: 4.1 TB
+         Fault Tolerance: 5
+         Heads: 255
+         Sectors Per Track: 32
+         Cylinders: 65535
+         Strip Size: 256 KB
+         Full Stripe Size: 1280 KB
+         Status: OK
+         Caching:  Enabled
+         Parity Initialization Status: Initialization Completed
+         Unique Identifier: 600508B1001CE46A2B8B1DDFA3B14C25
+         Disk Name: /dev/sdb 
+         Mount Points: None
+         Logical Drive Label: 06F70ADBPDSXK0ARH5I3C12618
+         Drive Type: Data
+         LD Acceleration Method: Controller Cache
+
+      physicaldrive 1I:1:3
+         Port: 1I
+         Box: 1
+         Bay: 3
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SAS
+         Size: 900.1 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Rotational Speed: 10500
+         Firmware Revision: HPD3
+         Serial Number: S0N0L9780000B410C7F0
+         Model: HP      EG0900FCVBL
+         Current Temperature (C): 29
+         Maximum Temperature (C): 39
+         PHY Count: 2
+         PHY Transfer Rate: 6.0Gbps, Unknown
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+         Sanitize Erase Supported: True
+         Unrestricted Sanitize Supported: False
+
+      physicaldrive 1I:1:4
+         Port: 1I
+         Box: 1
+         Bay: 4
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SAS
+         Size: 900.1 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Rotational Speed: 10500
+         Firmware Revision: HPD3
+         Serial Number: S0N0M39D0000B411D13V
+         Model: HP      EG0900FCVBL
+         Current Temperature (C): 29
+         Maximum Temperature (C): 41
+         PHY Count: 2
+         PHY Transfer Rate: 6.0Gbps, Unknown
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+         Sanitize Erase Supported: True
+         Unrestricted Sanitize Supported: False
+
+      physicaldrive 2I:1:5
+         Port: 2I
+         Box: 1
+         Bay: 5
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SAS
+         Size: 900.1 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Rotational Speed: 10000
+         Firmware Revision: HPD0
+         Serial Number: X3Q0A0GDFTM11343
+         Model: HP      EG0900FCSPN
+         Current Temperature (C): 27
+         Maximum Temperature (C): 42
+         PHY Count: 2
+         PHY Transfer Rate: 6.0Gbps, Unknown
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+         Sanitize Erase Supported: True
+         Sanitize Estimated Max Erase Time: 3 hour(s)47 minute(s)
+         Unrestricted Sanitize Supported: False
+
+      physicaldrive 2I:1:6
+         Port: 2I
+         Box: 1
+         Bay: 6
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SAS
+         Size: 900.1 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Rotational Speed: 10000
+         Firmware Revision: HPD0
+         Serial Number: X3Q0A0AWFTM11343
+         Model: HP      EG0900FCSPN
+         Current Temperature (C): 28
+         Maximum Temperature (C): 45
+         PHY Count: 2
+         PHY Transfer Rate: 6.0Gbps, Unknown
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+         Sanitize Erase Supported: True
+         Sanitize Estimated Max Erase Time: 3 hour(s)47 minute(s)
+         Unrestricted Sanitize Supported: False
+
+      physicaldrive 2I:1:7
+         Port: 2I
+         Box: 1
+         Bay: 7
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SAS
+         Size: 900.1 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Rotational Speed: 10000
+         Firmware Revision: HPD0
+         Serial Number: X3Q0A0IJFTM11343
+         Model: HP      EG0900FCSPN
+         Current Temperature (C): 28
+         Maximum Temperature (C): 44
+         PHY Count: 2
+         PHY Transfer Rate: 6.0Gbps, Unknown
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+         Sanitize Erase Supported: True
+         Sanitize Estimated Max Erase Time: 3 hour(s)47 minute(s)
+         Unrestricted Sanitize Supported: False
+
+      physicaldrive 2I:1:8
+         Port: 2I
+         Box: 1
+         Bay: 8
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SAS
+         Size: 900.1 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Rotational Speed: 10000
+         Firmware Revision: HPD0
+         Serial Number: X3Q0A00OFTM11343
+         Model: HP      EG0900FCSPN
+         Current Temperature (C): 28
+         Maximum Temperature (C): 42
+         PHY Count: 2
+         PHY Transfer Rate: 6.0Gbps, Unknown
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+         Sanitize Erase Supported: True
+         Sanitize Estimated Max Erase Time: 3 hour(s)47 minute(s)
+         Unrestricted Sanitize Supported: False
+
+
+   SEP (Vendor ID PMCSIERA, Model SRCv8x6G) 380 
+      Device Number: 380
+      Firmware Version: RevB
+      WWID: 50014380284D9BFF
+      Vendor ID: PMCSIERA
+      Model: SRCv8x6G
+

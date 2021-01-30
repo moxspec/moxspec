@@ -1,0 +1,60 @@
+Avago Technologies SAS3 IR Configuration Utility.
+Version 09.00.00.00 (2015.02.03)
+Copyright (c) 2009-2015 Avago Technologies. All rights reserved.
+
+Read configuration has been initiated for controller 0
+------------------------------------------------------------------------
+Controller information
+------------------------------------------------------------------------
+  Controller type                         : SAS3008
+  PI Supported                            : Yes
+  PI Mixing                               : Disabled
+  BIOS version                            : 8.13.00.00
+  Firmware version                        : 6.00.00.00
+  Channel description                     : 1 Serial Attached SCSI
+  Initiator ID                            : 0
+  Maximum physical devices                : 255
+  Concurrent commands supported           : 3072
+  Slot                                    : 1
+  Segment                                 : 0
+  Bus                                     : 5
+  Device                                  : 0
+  Function                                : 0
+  RAID Support                            : Yes
+------------------------------------------------------------------------
+IR Volume information
+------------------------------------------------------------------------
+IR volume 1
+  Volume ID                               : 322
+  Status of volume                        : Inactive, Okay (OKY)
+  Volume wwid                             : 07f652e74f1fbcfd
+  RAID level                              : RAID0
+  Size (in MB)                            : 1522064
+  Physical hard disks                     :
+  PHY[0] Enclosure#/Slot#                 : 0:0
+------------------------------------------------------------------------
+Physical device information
+------------------------------------------------------------------------
+Initiator at ID #0
+
+Device is a Hard disk
+  Enclosure #                             : 0
+  Slot #                                  : 0
+  SAS Address                             : 0000000-0-0000-0000
+  State                                   : Missing (MIS)
+  Manufacturer                            :
+  Model Number                            :
+  Firmware Revision                       :
+  Serial No                               : BTHC529203WB400VGN
+  GUID                                    : N/A
+  Drive Type                              : Undetermined
+------------------------------------------------------------------------
+Enclosure information
+------------------------------------------------------------------------
+  Enclosure#                              : 1
+  Logical ID                              : 50016360:019fc730
+  Numslots                                : 8
+  StartSlot                               : 0
+------------------------------------------------------------------------
+SAS3IRCU: Command DISPLAY Completed Successfully.
+SAS3IRCU: Utility Completed Successfully.

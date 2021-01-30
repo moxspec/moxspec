@@ -1,0 +1,99 @@
+      physicaldrive 1I:1:1
+         Port: 1I
+         Box: 1
+         Bay: 1
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SAS
+         Size: 900.1 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Rotational Speed: 10000
+         Firmware Revision: HPD0
+         Serial Number: Y3E0A0RMFTM11346
+         Model: HP      EG0900FCSPN
+         Current Temperature (C): 36
+         Maximum Temperature (C): 52
+         PHY Count: 2
+         PHY Transfer Rate: 6.0Gbps, Unknown
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+         Sanitize Erase Supported: True
+         Sanitize Estimated Max Erase Time: 3 hour(s)47 minute(s)
+         Unrestricted Sanitize Supported: False
+
+      physicaldrive 1I:1:2
+         Port: 1I
+         Box: 1
+         Bay: 2
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SAS
+         Size: 900.1 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Rotational Speed: 10000
+         Firmware Revision: HPD0
+         Serial Number: Y3E0A0XKFTM11346
+         Model: HP      EG0900FCSPN
+         Current Temperature (C): 38
+         Maximum Temperature (C): 56
+         PHY Count: 2
+         PHY Transfer Rate: 6.0Gbps, Unknown
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+         Sanitize Erase Supported: True
+         Sanitize Estimated Max Erase Time: 3 hour(s)47 minute(s)
+         Unrestricted Sanitize Supported: False
+
+      physicaldrive 1I:1:3
+         Port: 1I
+         Box: 1
+         Bay: 3
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SAS
+         Size: 900.1 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Rotational Speed: 10000
+         Firmware Revision: HPD0
+         Serial Number: Y3E0A11BFTM11346
+         Model: HP      EG0900FCSPN
+         Current Temperature (C): 35
+         Maximum Temperature (C): 51
+         PHY Count: 2
+         PHY Transfer Rate: 6.0Gbps, Unknown
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+         Sanitize Erase Supported: True
+         Sanitize Estimated Max Erase Time: 3 hour(s)47 minute(s)
+         Unrestricted Sanitize Supported: False
+
+      physicaldrive 1I:1:4
+         Port: 1I
+         Box: 1
+         Bay: 4
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SAS
+         Size: 900.1 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Rotational Speed: 10000
+         Firmware Revision: HPD0
+         Serial Number: Y3E0A0RGFTM11346
+         Model: HP      EG0900FCSPN
+         Current Temperature (C): 36
+         Maximum Temperature (C): 52
+         PHY Count: 2
+         PHY Transfer Rate: 6.0Gbps, Unknown
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+         Sanitize Erase Supported: True
+         Sanitize Estimated Max Erase Time: 3 hour(s)47 minute(s)
+         Unrestricted Sanitize Supported: False

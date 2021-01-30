@@ -1,0 +1,110 @@
+Dynamic Smart Array B120i RAID in Slot 0 (Embedded)
+   Bus Interface: PCI
+   Slot: 0
+   RAID 6 (ADG) Status: Disabled
+   Controller Status: OK
+   Hardware Revision: C
+   RAID Stack Version: 4.50
+   HBA Firmware Version:
+   HBA Mode Option ROM Version:
+   Option ROM Version:4.08-0
+   Rebuild Priority: Medium
+   Surface Scan Delay: 3 secs
+   Surface Scan Mode: Idle
+   Wait for Cache Room: Disabled
+   Surface Analysis Inconsistency Notification: Disabled
+   Post Prompt Timeout: 15 secs
+   Cache Board Present: False
+   Read Cache Size: 64 MB
+   Write Cache Size: 0 MB
+   Drive Write Cache: Disabled
+   Total Cache Size: 0 MB
+   SATA NCQ Supported: True
+   Spare Activation Mode: Activate on physical drive failure (default)
+   Number of Ports: 6 Internal only
+   Encryption Supported: False
+   Driver Name: hpvsa
+   Driver Version: 0.0.1
+   Driver Supports HP SSD Smart Path: False
+
+
+   Internal Drive Cage at Port 1I, Box 1, OK
+      Power Supply Status: Not Redundant
+      Serial Number:
+      Drive Bays: 2
+      Port: 1I
+      Box: 1
+      Location: Internal
+
+   Physical Drives
+      physicaldrive 1I:1:1 (port 1I:box 1:bay 1, SATA, 500 GB, OK)
+      physicaldrive 1I:1:2 (port 1I:box 1:bay 2, SATA, 500 GB, OK)
+
+   Array: A
+      Interface Type: SATA
+      Unused Space: 0  MB
+      Status: OK
+      Array Type: Data
+
+
+
+      Logical Drive: 1
+         Size: 465.7 GB
+         Fault Tolerance: 1
+         Heads: 255
+         Sectors Per Track: 32
+         Cylinders: 65535
+         Strip Size: 256 KB
+         Full Stripe Size: 256 KB
+         Status: OK
+         Caching:  Enabled
+         Unique Identifier: 600508B1001C74FC896D3A745A755483
+         Logical Drive Label: 01A6E05E9C30
+         Drive Type: Data
+         LD Acceleration Method: Controller Cache
+
+      physicaldrive 1I:1:1
+         Port: 1I
+         Box: 1
+         Bay: 1
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SATA
+         Size: 500 GB
+         Native Block Size: 512
+         Rotational Speed: 7200
+         Firmware Revision: HPGC
+         Serial Number: 9XF3H3D3
+         Model: ATA     MM0500GBKAK
+         SATA NCQ Capable: True
+         SATA NCQ Enabled: True
+         Current Temperature (C): 27
+         Maximum Temperature (C): 55
+         PHY Count: 1
+         PHY Transfer Rate: 6.0Gbps
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+
+      physicaldrive 1I:1:2
+         Port: 1I
+         Box: 1
+         Bay: 2
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SATA
+         Size: 500 GB
+         Native Block Size: 512
+         Rotational Speed: 7200
+         Firmware Revision: HPGC
+         Serial Number: 9XF3H3EK
+         Model: ATA     MM0500GBKAK
+         SATA NCQ Capable: True
+         SATA NCQ Enabled: True
+         Current Temperature (C): 26
+         Maximum Temperature (C): 55
+         PHY Count: 1
+         PHY Transfer Rate: 6.0Gbps
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6

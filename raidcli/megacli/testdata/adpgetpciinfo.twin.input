@@ -1,0 +1,14 @@
+PCI information for Controller 0
+--------------------------------
+Bus Number      : 1
+Device Number   : 0
+Function Number : 0
+
+PCI information for Controller 1
+--------------------------------
+Bus Number      : 2
+Device Number   : FF
+Function Number : 0
+
+
+Exit Code: 0x00

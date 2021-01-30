@@ -1,0 +1,23 @@
+      Logical Drive: 1
+         Size: 1.6 TB
+         Fault Tolerance: 1+0
+         Heads: 255
+         Sectors Per Track: 32
+         Cylinders: 65535
+         Strip Size: 256 KB
+         Full Stripe Size: 512 KB
+         Status: OK
+         Caching:  Enabled
+         Unique Identifier: 600508B1001C1BD85F342B5B6BDC3C2C
+         Disk Name: /dev/sda 
+         Mount Points: /boot 512 MB Partition Number 3, / 1.6 TB Partition Number 5
+         OS Status: LOCKED
+         Logical Drive Label: A24CD379PDSXK0ARH5O18K6DA4
+         Mirror Group 1:
+            physicaldrive 1I:1:1 (port 1I:box 1:bay 1, SAS, 900.1 GB, OK)
+            physicaldrive 1I:1:2 (port 1I:box 1:bay 2, SAS, 900.1 GB, OK)
+         Mirror Group 2:
+            physicaldrive 1I:1:3 (port 1I:box 1:bay 3, SAS, 900.1 GB, OK)
+            physicaldrive 1I:1:4 (port 1I:box 1:bay 4, SAS, 900.1 GB, OK)
+         Drive Type: Data
+         LD Acceleration Method: Controller Cache

@@ -1,0 +1,227 @@
+Smart Array P420 in Slot 2
+   Bus Interface: PCI
+   Slot: 2
+   Serial Number: PDSXK0ARH5O18K
+   Cache Serial Number: PBKUC0BRH5O0O3
+   RAID 6 (ADG) Status: Enabled
+   Controller Status: OK
+   Hardware Revision: B
+   Firmware Version: 6.68
+   Rebuild Priority: Low
+   Expand Priority: Medium
+   Surface Scan Delay: 15 secs
+   Surface Scan Mode: Idle
+   Parallel Surface Scan Supported: No
+   Queue Depth: Automatic
+   Monitor and Performance Delay: 60  min
+   Elevator Sort: Enabled
+   Degraded Performance Optimization: Disabled
+   Inconsistency Repair Policy: Disabled
+   Wait for Cache Room: Disabled
+   Surface Analysis Inconsistency Notification: Disabled
+   Post Prompt Timeout: 0 secs
+   Cache Board Present: True
+   Cache Status: OK
+   Cache Ratio: 10% Read / 90% Write
+   Drive Write Cache: Disabled
+   Total Cache Size: 1024 MB
+   Total Cache Memory Available: 816 MB
+   No-Battery Write Cache: Disabled
+   SSD Caching RAID5 WriteBack Enabled: False
+   SSD Caching Version: 1
+   Cache Backup Power Source: Capacitors
+   Battery/Capacitor Count: 1
+   Battery/Capacitor Status: OK
+   SATA NCQ Supported: True
+   Spare Activation Mode: Activate on physical drive failure (default)
+   Controller Temperature (C): 88
+   Cache Module Temperature (C): 50
+   Capacitor Temperature  (C): 26
+   Number of Ports: 2 Internal only
+   Driver Name: hpsa
+   Driver Version: 3.4.10
+   Driver Supports HPE SSD Smart Path: True
+   PCI Address (Domain:Bus:Device.Function): 0000:04:00.0
+   Host Serial Number: SGH34891KX
+   Sanitize Erase Supported: False
+   Primary Boot Volume: None
+   Secondary Boot Volume: None
+
+
+   Port Name: 2I
+         Port ID: 0
+         Port Connection Number: 0
+         SAS Address: 50014380289CB410
+         Port Location: Internal
+
+   Port Name: 1I
+         Port ID: 1
+         Port Connection Number: 1
+         SAS Address: 50014380289CB414
+         Port Location: Internal
+
+   Internal Drive Cage at Port 1I, Box 1, OK
+      Power Supply Status: Not Redundant
+      Drive Bays: 4
+      Port: 1I
+      Box: 1
+      Location: Internal
+
+   Physical Drives
+      physicaldrive 1I:1:1 (port 1I:box 1:bay 1, SAS, 900.1 GB, OK)
+      physicaldrive 1I:1:2 (port 1I:box 1:bay 2, SAS, 900.1 GB, OK)
+      physicaldrive 1I:1:3 (port 1I:box 1:bay 3, SAS, 900.1 GB, OK)
+      physicaldrive 1I:1:4 (port 1I:box 1:bay 4, SAS, 900.1 GB, OK)
+
+
+   Internal Drive Cage at Port 2I, Box 0, OK
+      Power Supply Status: Not Redundant
+      Drive Bays: 4
+      Port: 2I
+      Box: 0
+      Location: Internal
+
+   Physical Drives
+      None attached
+
+   Array: A
+      Interface Type: SAS
+      Unused Space: 0  MB (0.0%)
+      Used Space: 3.3 TB (100.0%)
+      Status: OK
+      Array Type: Data       HPE SSD Smart Path: disable
+
+
+
+      Logical Drive: 1
+         Size: 1.6 TB
+         Fault Tolerance: 1+0
+         Heads: 255
+         Sectors Per Track: 32
+         Cylinders: 65535
+         Strip Size: 256 KB
+         Full Stripe Size: 512 KB
+         Status: OK
+         Caching:  Enabled
+         Unique Identifier: 600508B1001C1BD85F342B5B6BDC3C2C
+         Disk Name: /dev/sda 
+         Mount Points: /boot 512 MB Partition Number 3, / 1.6 TB Partition Number 5
+         OS Status: LOCKED
+         Logical Drive Label: A24CD379PDSXK0ARH5O18K6DA4
+         Mirror Group 1:
+            physicaldrive 1I:1:1 (port 1I:box 1:bay 1, SAS, 900.1 GB, OK)
+            physicaldrive 1I:1:2 (port 1I:box 1:bay 2, SAS, 900.1 GB, OK)
+         Mirror Group 2:
+            physicaldrive 1I:1:3 (port 1I:box 1:bay 3, SAS, 900.1 GB, OK)
+            physicaldrive 1I:1:4 (port 1I:box 1:bay 4, SAS, 900.1 GB, OK)
+         Drive Type: Data
+         LD Acceleration Method: Controller Cache
+
+      physicaldrive 1I:1:1
+         Port: 1I
+         Box: 1
+         Bay: 1
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SAS
+         Size: 900.1 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Rotational Speed: 10000
+         Firmware Revision: HPD0
+         Serial Number: Y3E0A0RMFTM11346
+         Model: HP      EG0900FCSPN
+         Current Temperature (C): 36
+         Maximum Temperature (C): 52
+         PHY Count: 2
+         PHY Transfer Rate: 6.0Gbps, Unknown
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+         Sanitize Erase Supported: True
+         Sanitize Estimated Max Erase Time: 3 hour(s)47 minute(s)
+         Unrestricted Sanitize Supported: False
+
+      physicaldrive 1I:1:2
+         Port: 1I
+         Box: 1
+         Bay: 2
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SAS
+         Size: 900.1 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Rotational Speed: 10000
+         Firmware Revision: HPD0
+         Serial Number: Y3E0A0XKFTM11346
+         Model: HP      EG0900FCSPN
+         Current Temperature (C): 38
+         Maximum Temperature (C): 56
+         PHY Count: 2
+         PHY Transfer Rate: 6.0Gbps, Unknown
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+         Sanitize Erase Supported: True
+         Sanitize Estimated Max Erase Time: 3 hour(s)47 minute(s)
+         Unrestricted Sanitize Supported: False
+
+      physicaldrive 1I:1:3
+         Port: 1I
+         Box: 1
+         Bay: 3
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SAS
+         Size: 900.1 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Rotational Speed: 10000
+         Firmware Revision: HPD0
+         Serial Number: Y3E0A11BFTM11346
+         Model: HP      EG0900FCSPN
+         Current Temperature (C): 35
+         Maximum Temperature (C): 51
+         PHY Count: 2
+         PHY Transfer Rate: 6.0Gbps, Unknown
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+         Sanitize Erase Supported: True
+         Sanitize Estimated Max Erase Time: 3 hour(s)47 minute(s)
+         Unrestricted Sanitize Supported: False
+
+      physicaldrive 1I:1:4
+         Port: 1I
+         Box: 1
+         Bay: 4
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SAS
+         Size: 900.1 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Rotational Speed: 10000
+         Firmware Revision: HPD0
+         Serial Number: Y3E0A0RGFTM11346
+         Model: HP      EG0900FCSPN
+         Current Temperature (C): 36
+         Maximum Temperature (C): 52
+         PHY Count: 2
+         PHY Transfer Rate: 6.0Gbps, Unknown
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+         Sanitize Erase Supported: True
+         Sanitize Estimated Max Erase Time: 3 hour(s)47 minute(s)
+         Unrestricted Sanitize Supported: False
+
+
+   SEP (Vendor ID PMCSIERA, Model SRCv8x6G) 380 
+      Device Number: 380
+      Firmware Version: RevB
+      WWID: 50014380289CB41F
+      Vendor ID: PMCSIERA
+      Model: SRCv8x6G
+

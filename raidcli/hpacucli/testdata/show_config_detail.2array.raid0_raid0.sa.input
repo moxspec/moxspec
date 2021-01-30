@@ -1,0 +1,143 @@
+   Array: A
+      Interface Type: SATA
+      Unused Space: 0  MB
+      Status: OK
+      Array Type: Data
+      HP SSD Smart Path: disable
+
+
+
+      Logical Drive: 59
+         Size: 3.6 TB
+         Fault Tolerance: 0
+         Heads: 255
+         Sectors Per Track: 32
+         Cylinders: 65535
+         Strip Size: 256 KB
+         Full Stripe Size: 256 KB
+         Status: OK
+         Caching:  Enabled
+         Unique Identifier: 600508B1001C7D1B4F945E756A24A92B
+         Disk Name: /dev/sdbh          Mount Points: /home59 3.6 TB Partition Number 2
+         OS Status: LOCKED
+         Logical Drive Label: E9A6DEE8PCFBB0HLM7S0LW1515
+         Drive Type: Data
+         LD Acceleration Method: Controller Cache
+
+      physicaldrive 2I:1:29
+         Port: 2I
+         Box: 1
+         Bay: 29
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SATA
+         Size: 4000.7 GB
+         Native Block Size: 512
+         Rotational Speed: 7200
+         Firmware Revision: HPG3
+         Serial Number: P4HBRYNC
+         Model: ATA     MB4000GCWLV
+         SATA NCQ Capable: True
+         SATA NCQ Enabled: True
+         Current Temperature (C): 43
+         Maximum Temperature (C): 48
+         PHY Count: 1
+         PHY Transfer Rate: 6.0Gbps
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+
+
+   Array: B
+      Interface Type: SATA
+      Unused Space: 0  MB
+      Status: OK
+      Array Type: Data
+      HP SSD Smart Path: disable
+
+
+
+      Logical Drive: 60
+         Size: 3.6 TB
+         Fault Tolerance: 0
+         Heads: 255
+         Sectors Per Track: 32
+         Cylinders: 65535
+         Strip Size: 256 KB
+         Full Stripe Size: 256 KB
+         Status: OK
+         Caching:  Enabled
+         Unique Identifier: 600508B1001C50C56BC3F39321BCF962
+         Disk Name: /dev/sdbi          Mount Points: /home60 3.6 TB Partition Number 2
+         OS Status: LOCKED
+         Logical Drive Label: EDA6DEF5PCFBB0HLM7S0LWA125
+         Drive Type: Data
+         LD Acceleration Method: Controller Cache
+
+      physicaldrive 2I:1:30
+         Port: 2I
+         Box: 1
+         Bay: 30
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SATA
+         Size: 4000.7 GB
+         Native Block Size: 512
+         Rotational Speed: 7200
+         Firmware Revision: HPG3
+         Serial Number: P4HBUG0C
+         Model: ATA     MB4000GCWLV
+         SATA NCQ Capable: True
+         SATA NCQ Enabled: True
+         Current Temperature (C): 43
+         Maximum Temperature (C): 48
+         PHY Count: 1
+         PHY Transfer Rate: 6.0Gbps
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+
+
+   Enclosure SEP (Vendor ID HP, Model SL454x.1) 376
+      Device Number: 376
+      Firmware Version: 3.56
+      WWID: 50014380243E54E7
+      Port: 1I
+      Box: 1
+      Vendor ID: HP
+      Model: SL454x.1
+      SEP Zoning: off
+
+   Enclosure SEP (Vendor ID HP, Model SL454x.1) 377
+      Device Number: 377
+      Firmware Version: 3.56
+      WWID: 50014380243E0E27
+      Port: 2I
+      Box: 1
+      Vendor ID: HP
+      Model: SL454x.1
+      SEP Zoning: off
+
+   Expander 379
+      Device Number: 379
+      Firmware Version: 3.56
+      WWID: 50014380243E54C0
+      Port: 1I
+      Box: 1
+      Vendor ID: HP
+
+   Expander 380
+      Device Number: 380
+      Firmware Version: 3.56
+      WWID: 50014380243E0E00
+      Port: 2I
+      Box: 1
+      Vendor ID: HP
+
+   SEP (Vendor ID PMCSIERA, Model SRCv8x6G) 378
+      Device Number: 378
+      Firmware Version: RevB
+      WWID: 5001438026F53A4F
+      Vendor ID: PMCSIERA
+      Model: SRCv8x6G
+

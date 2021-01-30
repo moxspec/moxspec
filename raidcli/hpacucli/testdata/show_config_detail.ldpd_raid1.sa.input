@@ -1,0 +1,69 @@
+   Array: A
+      Interface Type: SAS
+      Unused Space: 0  MB (0.0%)
+      Used Space: 558.7 GB (100.0%)
+      Status: OK
+      Array Type: Data 
+
+
+      Logical Drive: 1
+         Size: 279.4 GB
+         Fault Tolerance: 1
+         Heads: 255
+         Sectors Per Track: 32
+         Cylinders: 65535
+         Strip Size: 256 KB
+         Full Stripe Size: 256 KB
+         Status: OK
+         Caching:  Disabled
+         Unique Identifier: 600508B1001C3E2424DA987580FDB7B0
+         Disk Name: /dev/sda 
+         Mount Points: None
+         Logical Drive Label: 01281441PACCRID103419YVDA16
+         Mirror Group 1:
+            physicaldrive 1I:1:1 (port 1I:box 1:bay 1, SAS, 300 GB, OK)
+         Mirror Group 2:
+            physicaldrive 1I:1:2 (port 1I:box 1:bay 2, SAS, 300 GB, OK)
+         Drive Type: Data
+         LD Acceleration Method: All disabled
+
+      physicaldrive 1I:1:1
+         Port: 1I
+         Box: 1
+         Bay: 1
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SAS
+         Size: 300 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Rotational Speed: 15000
+         Firmware Revision: HPD3
+         Serial Number: JTYA9PEM
+         Model: HP      EF0300FATFD
+         Current Temperature (C): 33
+         Maximum Temperature (C): 41
+         PHY Count: 2
+         PHY Transfer Rate: 6.0Gbps, Unknown
+         Sanitize Erase Supported: False
+
+      physicaldrive 1I:1:2
+         Port: 1I
+         Box: 1
+         Bay: 2
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SAS
+         Size: 300 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Rotational Speed: 15000
+         Firmware Revision: HPD3
+         Serial Number: JTYBTR2J
+         Model: HP      EF0300FATFD
+         Current Temperature (C): 33
+         Maximum Temperature (C): 43
+         PHY Count: 2
+         PHY Transfer Rate: 6.0Gbps, Unknown
+         Sanitize Erase Supported: False
+

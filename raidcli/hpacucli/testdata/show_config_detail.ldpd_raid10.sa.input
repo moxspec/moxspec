@@ -1,0 +1,132 @@
+   Array: A
+      Interface Type: SAS
+      Unused Space: 0  MB (0.0%)
+      Used Space: 3.3 TB (100.0%)
+      Status: OK
+      Array Type: Data       HPE SSD Smart Path: disable
+
+
+
+      Logical Drive: 1
+         Size: 1.6 TB
+         Fault Tolerance: 1+0
+         Heads: 255
+         Sectors Per Track: 32
+         Cylinders: 65535
+         Strip Size: 256 KB
+         Full Stripe Size: 512 KB
+         Status: OK
+         Caching:  Enabled
+         Unique Identifier: 600508B1001C1BD85F342B5B6BDC3C2C
+         Disk Name: /dev/sda 
+         Mount Points: /boot 512 MB Partition Number 3, / 1.6 TB Partition Number 5
+         OS Status: LOCKED
+         Logical Drive Label: A24CD379PDSXK0ARH5O18K6DA4
+         Mirror Group 1:
+            physicaldrive 1I:1:1 (port 1I:box 1:bay 1, SAS, 900.1 GB, OK)
+            physicaldrive 1I:1:2 (port 1I:box 1:bay 2, SAS, 900.1 GB, OK)
+         Mirror Group 2:
+            physicaldrive 1I:1:3 (port 1I:box 1:bay 3, SAS, 900.1 GB, OK)
+            physicaldrive 1I:1:4 (port 1I:box 1:bay 4, SAS, 900.1 GB, OK)
+         Drive Type: Data
+         LD Acceleration Method: Controller Cache
+
+      physicaldrive 1I:1:1
+         Port: 1I
+         Box: 1
+         Bay: 1
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SAS
+         Size: 900.1 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Rotational Speed: 10000
+         Firmware Revision: HPD0
+         Serial Number: Y3E0A0RMFTM11346
+         Model: HP      EG0900FCSPN
+         Current Temperature (C): 36
+         Maximum Temperature (C): 52
+         PHY Count: 2
+         PHY Transfer Rate: 6.0Gbps, Unknown
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+         Sanitize Erase Supported: True
+         Sanitize Estimated Max Erase Time: 3 hour(s)47 minute(s)
+         Unrestricted Sanitize Supported: False
+
+      physicaldrive 1I:1:2
+         Port: 1I
+         Box: 1
+         Bay: 2
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SAS
+         Size: 900.1 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Rotational Speed: 10000
+         Firmware Revision: HPD0
+         Serial Number: Y3E0A0XKFTM11346
+         Model: HP      EG0900FCSPN
+         Current Temperature (C): 38
+         Maximum Temperature (C): 56
+         PHY Count: 2
+         PHY Transfer Rate: 6.0Gbps, Unknown
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+         Sanitize Erase Supported: True
+         Sanitize Estimated Max Erase Time: 3 hour(s)47 minute(s)
+         Unrestricted Sanitize Supported: False
+
+      physicaldrive 1I:1:3
+         Port: 1I
+         Box: 1
+         Bay: 3
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SAS
+         Size: 900.1 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Rotational Speed: 10000
+         Firmware Revision: HPD0
+         Serial Number: Y3E0A11BFTM11346
+         Model: HP      EG0900FCSPN
+         Current Temperature (C): 35
+         Maximum Temperature (C): 51
+         PHY Count: 2
+         PHY Transfer Rate: 6.0Gbps, Unknown
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+         Sanitize Erase Supported: True
+         Sanitize Estimated Max Erase Time: 3 hour(s)47 minute(s)
+         Unrestricted Sanitize Supported: False
+
+      physicaldrive 1I:1:4
+         Port: 1I
+         Box: 1
+         Bay: 4
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: SAS
+         Size: 900.1 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Rotational Speed: 10000
+         Firmware Revision: HPD0
+         Serial Number: Y3E0A0RGFTM11346
+         Model: HP      EG0900FCSPN
+         Current Temperature (C): 36
+         Maximum Temperature (C): 52
+         PHY Count: 2
+         PHY Transfer Rate: 6.0Gbps, Unknown
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+         Sanitize Erase Supported: True
+         Sanitize Estimated Max Erase Time: 3 hour(s)47 minute(s)
+         Unrestricted Sanitize Supported: False

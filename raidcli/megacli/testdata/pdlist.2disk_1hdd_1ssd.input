@@ -1,0 +1,110 @@
+Adapter #0
+
+Enclosure Device ID: 252
+Slot Number: 0
+Drive's position: DiskGroup: 0, Span: 0, Arm: 0
+Enclosure position: N/A
+Device Id: 0
+WWN: 5000CCA06E3B2513
+Sequence Number: 2
+Media Error Count: 1
+Other Error Count: 0
+Predictive Failure Count: 0
+Last Predictive Failure Event Seq Number: 0
+PD Type: SAS
+
+Raw Size: 279.396 GB [0x22ecb25c Sectors]
+Non Coerced Size: 278.896 GB [0x22dcb25c Sectors]
+Coerced Size: 278.464 GB [0x22cee000 Sectors]
+Sector Size:  512
+Logical Sector Size:  512
+Physical Sector Size:  512
+Firmware state: Online, Spun Up
+Commissioned Spare : No
+Emergency Spare : No
+Device Firmware Level: A440
+Shield Counter: 0
+Successful diagnostics completion on :  N/A
+SAS Address(0): 0x5000cca06e3b2511
+SAS Address(1): 0x0
+Connected Port Number: 0(path0)
+Inquiry Data: HITACHI HUC109030CSS600 A440W5H1JAZG
+FDE Capable: Not Capable
+FDE Enable: Disable
+Secured: Unsecured
+Locked: Unlocked
+Needs EKM Attention: No
+Foreign State: None
+Device Speed: 6.0Gb/s
+Link Speed: 6.0Gb/s
+Media Type: Hard Disk Device
+Drive:  Not Certified
+Drive Temperature :32C (89.60 F)
+PI Eligibility:  No
+Drive is formatted for PI information:  No
+PI: No PI
+Port-0 :
+Port status: Active
+Port's Linkspeed: 6.0Gb/s
+Port-1 :
+Port status: Active
+Port's Linkspeed: 6.0Gb/s
+Drive has flagged a S.M.A.R.T alert : No
+
+
+
+Enclosure Device ID: 252
+Slot Number: 1
+Drive's position: DiskGroup: 0, Span: 0, Arm: 1
+Enclosure position: N/A
+Device Id: 1
+WWN: 5000CCA06E3AB89B
+Sequence Number: 2
+Media Error Count: 0
+Other Error Count: 0
+Predictive Failure Count: 0
+Last Predictive Failure Event Seq Number: 0
+PD Type: SAS
+
+Raw Size: 279.396 GB [0x22ecb25c Sectors]
+Non Coerced Size: 278.896 GB [0x22dcb25c Sectors]
+Coerced Size: 278.464 GB [0x22cee000 Sectors]
+Sector Size:  512
+Logical Sector Size:  512
+Physical Sector Size:  512
+Firmware state: Online, Spun Up
+Commissioned Spare : No
+Emergency Spare : No
+Device Firmware Level: A440
+Shield Counter: 0
+Successful diagnostics completion on :  N/A
+SAS Address(0): 0x5000cca06e3ab899
+SAS Address(1): 0x0
+Connected Port Number: 1(path0)
+Inquiry Data: HITACHI HUC109030CSS600 A440W5H1941G
+FDE Capable: Not Capable
+FDE Enable: Disable
+Secured: Unsecured
+Locked: Unlocked
+Needs EKM Attention: No
+Foreign State: None
+Device Speed: 6.0Gb/s
+Link Speed: 6.0Gb/s
+Media Type: Solid State Device
+Drive:  Not Certified
+Drive Temperature :34C (93.20 F)
+PI Eligibility:  No
+Drive is formatted for PI information:  No
+PI: No PI
+Port-0 :
+Port status: Active
+Port's Linkspeed: 6.0Gb/s
+Port-1 :
+Port status: Active
+Port's Linkspeed: 6.0Gb/s
+Drive has flagged a S.M.A.R.T alert : Yes
+
+
+
+
+Exit Code: 0x00

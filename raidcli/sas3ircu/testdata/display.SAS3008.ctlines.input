@@ -1,0 +1,15 @@
+Controller type                         : SAS3008
+PI Supported                            : Yes
+PI Mixing                               : Disabled
+BIOS version                            : 8.13.00.00
+Firmware version                        : 6.00.00.00
+Channel description                     : 1 Serial Attached SCSI
+Initiator ID                            : 0
+Maximum physical devices                : 255
+Concurrent commands supported           : 3072
+Slot                                    : 1
+Segment                                 : 0
+Bus                                     : 5
+Device                                  : 0
+Function                                : 0
+RAID Support                            : Yes

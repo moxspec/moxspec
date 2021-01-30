@@ -1,0 +1,113 @@
+   Array: A
+      Interface Type: Solid State SATA
+      Unused Space: 0  MB (0.0%)
+      Used Space: 1.6 TB (100.0%)
+      Status: OK
+      Array Type: Data       HPE SSD Smart Path: enable
+
+
+
+      Logical Drive: 1
+         Size: 1.1 TB
+         Fault Tolerance: 5
+         Heads: 255
+         Sectors Per Track: 32
+         Cylinders: 65535
+         Strip Size: 256 KB
+         Full Stripe Size: 512 KB
+         Status: OK
+         Caching:  Disabled
+         Parity Initialization Status: Initialization Completed
+         Unique Identifier: 600508B1001C55055A74C4B3ADF8E2B2
+         Disk Name: /dev/sda 
+         Mount Points: /boot 488 MB Partition Number 2, / 1.1 TB Partition Number 4
+         OS Status: LOCKED
+         Logical Drive Label: 00462790PDNLH0BRH7N33Y5243
+         Drive Type: Data
+         LD Acceleration Method: HPE SSD Smart Path
+
+      physicaldrive 1I:1:1
+         Port: 1I
+         Box: 1
+         Bay: 1
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: Solid State SATA
+         Size: 600 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Firmware Revision: 4IWVHPG0
+         Serial Number: BTWL3363077U600TGN
+         Model: ATA     VK0600GDUTQ
+         SATA NCQ Capable: True
+         SATA NCQ Enabled: True
+         Current Temperature (C): 19
+         Maximum Temperature (C): 27
+         Usage remaining: 97.30%
+         Power On Hours: 34052
+         Estimated Life Remaining based on workload to date: 51130 days
+         SSD Smart Trip Wearout: False
+         PHY Count: 1
+         PHY Transfer Rate: 6.0Gbps
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+         Sanitize Erase Supported: False
+
+      physicaldrive 1I:1:2
+         Port: 1I
+         Box: 1
+         Bay: 2
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: Solid State SATA
+         Size: 600 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Firmware Revision: 4IWVHPG0
+         Serial Number: BTWL33630794600TGN
+         Model: ATA     VK0600GDUTQ
+         SATA NCQ Capable: True
+         SATA NCQ Enabled: True
+         Current Temperature (C): 19
+         Maximum Temperature (C): 28
+         Usage remaining: 97.30%
+         Power On Hours: 34052
+         Estimated Life Remaining based on workload to date: 51130 days
+         SSD Smart Trip Wearout: False
+         PHY Count: 1
+         PHY Transfer Rate: 6.0Gbps
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+         Sanitize Erase Supported: False
+
+      physicaldrive 1I:1:3
+         Port: 1I
+         Box: 1
+         Bay: 3
+         Status: OK
+         Drive Type: Data Drive
+         Interface Type: Solid State SATA
+         Size: 600 GB
+         Drive exposed to OS: False
+         Native Block Size: 512
+         Firmware Revision: 4IWVHPG0
+         Serial Number: BTWL336307C1600TGN
+         Model: ATA     VK0600GDUTQ
+         SATA NCQ Capable: True
+         SATA NCQ Enabled: True
+         Current Temperature (C): 17
+         Maximum Temperature (C): 25
+         Usage remaining: 97.34%
+         Power On Hours: 34052
+         Estimated Life Remaining based on workload to date: 51920 days
+         SSD Smart Trip Wearout: False
+         PHY Count: 1
+         PHY Transfer Rate: 6.0Gbps
+         Drive Authentication Status: OK
+         Carrier Application Version: 11
+         Carrier Bootloader Version: 6
+         Sanitize Erase Supported: False
+
+

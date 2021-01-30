@@ -1,0 +1,199 @@
+Adapter #0
+
+Enclosure Device ID: 32
+Slot Number: 0
+Enclosure position: 1
+Device Id: 0
+WWN: 5000CCA2731373AB
+Sequence Number: 10
+Media Error Count: 0
+Other Error Count: 0
+Predictive Failure Count: 0
+Last Predictive Failure Event Seq Number: 0
+PD Type: SAS
+
+Raw Size: 8.910 TB [0x474800000 Sectors]
+Non Coerced Size: 8.909 TB [0x474700000 Sectors]
+Coerced Size: 8.909 TB [0x474700000 Sectors]
+Sector Size:  512
+Logical Sector Size:  512
+Physical Sector Size:  4096
+Firmware state: JBOD
+Device Firmware Level: LS14
+Shield Counter: 0
+Successful diagnostics completion on :  N/A
+SAS Address(0): 0x5000cca2731373a9
+SAS Address(1): 0x0
+Connected Port Number: 0(path0) 
+Inquiry Data: HGST    HUH721010AL5200 LS142YGAPMLD            
+FDE Capable: Not Capable
+FDE Enable: Disable
+Secured: Unsecured
+Locked: Unlocked
+Needs EKM Attention: No
+Foreign State: None 
+Device Speed: 12.0Gb/s 
+Link Speed: 12.0Gb/s 
+Media Type: Hard Disk Device
+Drive Temperature :30C (86.00 F)
+PI Eligibility:  No 
+Drive is formatted for PI information:  Yes 
+PI: PI with type 2
+Port-0 :
+Port status: Active
+Port's Linkspeed: 12.0Gb/s 
+Port-1 :
+Port status: Active
+Port's Linkspeed: 12.0Gb/s 
+Drive has flagged a S.M.A.R.T alert : No
+
+
+
+Enclosure Device ID: 32
+Slot Number: 1
+Enclosure position: 1
+Device Id: 1
+WWN: 5000CCA273155BB7
+Sequence Number: 7
+Media Error Count: 0
+Other Error Count: 0
+Predictive Failure Count: 0
+Last Predictive Failure Event Seq Number: 0
+PD Type: SAS
+
+Raw Size: 8.910 TB [0x474800000 Sectors]
+Non Coerced Size: 8.909 TB [0x474700000 Sectors]
+Coerced Size: 8.909 TB [0x474700000 Sectors]
+Sector Size:  512
+Logical Sector Size:  512
+Physical Sector Size:  4096
+Firmware state: Unconfigured(good), Spun Up
+Device Firmware Level: LS14
+Shield Counter: 0
+Successful diagnostics completion on :  N/A
+SAS Address(0): 0x5000cca273155bb5
+SAS Address(1): 0x0
+Connected Port Number: 0(path0) 
+Inquiry Data: HGST    HUH721010AL5200 LS142YGBS45D            
+FDE Capable: Not Capable
+FDE Enable: Disable
+Secured: Unsecured
+Locked: Unlocked
+Needs EKM Attention: No
+Foreign State: None 
+Device Speed: 12.0Gb/s 
+Link Speed: 12.0Gb/s 
+Media Type: Hard Disk Device
+Drive Temperature :30C (86.00 F)
+PI Eligibility:  No 
+Drive is formatted for PI information:  Yes 
+PI: PI with type 2
+Port-0 :
+Port status: Active
+Port's Linkspeed: 12.0Gb/s 
+Port-1 :
+Port status: Active
+Port's Linkspeed: 12.0Gb/s 
+Drive has flagged a S.M.A.R.T alert : No
+
+
+
+Enclosure Device ID: 32
+Slot Number: 2
+Enclosure position: 1
+Device Id: 2
+WWN: 5000CCA26ADC8FDB
+Sequence Number: 5
+Media Error Count: 0
+Other Error Count: 0
+Predictive Failure Count: 0
+Last Predictive Failure Event Seq Number: 0
+PD Type: SAS
+
+Raw Size: 8.910 TB [0x474800000 Sectors]
+Non Coerced Size: 8.909 TB [0x474700000 Sectors]
+Coerced Size: 8.909 TB [0x474700000 Sectors]
+Sector Size:  512
+Logical Sector Size:  512
+Physical Sector Size:  4096
+Firmware state: Unconfigured(good), Spun Up
+Device Firmware Level: LS14
+Shield Counter: 0
+Successful diagnostics completion on :  N/A
+SAS Address(0): 0x5000cca26adc8fd9
+SAS Address(1): 0x0
+Connected Port Number: 0(path0) 
+Inquiry Data: HGST    HUH721010AL5200 LS142TKX9AJD            
+FDE Capable: Not Capable
+FDE Enable: Disable
+Secured: Unsecured
+Locked: Unlocked
+Needs EKM Attention: No
+Foreign State: None 
+Device Speed: 12.0Gb/s 
+Link Speed: 12.0Gb/s 
+Media Type: Hard Disk Device
+Drive Temperature :29C (84.20 F)
+PI Eligibility:  No 
+Drive is formatted for PI information:  Yes 
+PI: PI with type 2
+Port-0 :
+Port status: Active
+Port's Linkspeed: 12.0Gb/s 
+Port-1 :
+Port status: Active
+Port's Linkspeed: 12.0Gb/s 
+Drive has flagged a S.M.A.R.T alert : No
+
+
+
+Enclosure Device ID: 32
+Slot Number: 3
+Enclosure position: 1
+Device Id: 3
+WWN: 5000CCA26ADE95BB
+Sequence Number: 8
+Media Error Count: 0
+Other Error Count: 0
+Predictive Failure Count: 0
+Last Predictive Failure Event Seq Number: 0
+PD Type: SAS
+
+Raw Size: 8.910 TB [0x474800000 Sectors]
+Non Coerced Size: 8.909 TB [0x474700000 Sectors]
+Coerced Size: 8.909 TB [0x474700000 Sectors]
+Sector Size:  512
+Logical Sector Size:  512
+Physical Sector Size:  4096
+Firmware state: JBOD
+Device Firmware Level: LS14
+Shield Counter: 0
+Successful diagnostics completion on :  N/A
+SAS Address(0): 0x5000cca26ade95b9
+SAS Address(1): 0x0
+Connected Port Number: 0(path0) 
+Inquiry Data: HGST    HUH721010AL5200 LS142TKYDUPD            
+FDE Capable: Not Capable
+FDE Enable: Disable
+Secured: Unsecured
+Locked: Unlocked
+Needs EKM Attention: No
+Foreign State: None 
+Device Speed: 12.0Gb/s 
+Link Speed: 12.0Gb/s 
+Media Type: Hard Disk Device
+Drive Temperature :30C (86.00 F)
+PI Eligibility:  No 
+Drive is formatted for PI information:  Yes 
+PI: PI with type 2
+Port-0 :
+Port status: Active
+Port's Linkspeed: 12.0Gb/s 
+Port-1 :
+Port status: Active
+Port's Linkspeed: 12.0Gb/s 
+Drive has flagged a S.M.A.R.T alert : No
+
+
+
+Exit Code: 0x00

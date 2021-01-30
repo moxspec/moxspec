@@ -1,0 +1,26 @@
+version: 2.1
+image_config: &image_config
+  IMAGE_NAME: moxspec-centos
+  IMAGE_TAG: 7
+jobs:
+  build:
+    working_directory: /go/src/github.com/actapio/moxspec
+    environment:
+      <<: *image_config
+    docker:
+      - image: actapio/$IMAGE_NAME:$IMAGE_TAG
+        auth:
+          username: $DOCKER_USERNAME
+          password: $DOCKER_PASSWORD
+    steps:
+      - checkout
+      - run: curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+      - run: chmod +x ./cc-test-reporter
+      - run: ./cc-test-reporter before-build
+      - run: make test
+      - run: ./cc-test-reporter after-build --exit-code $?
+workflows:
+  build:
+    jobs:
+      - build:
+          context: moxspec

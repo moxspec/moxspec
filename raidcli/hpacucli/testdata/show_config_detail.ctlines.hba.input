@@ -1,0 +1,107 @@
+Smart HBA H240ar in Slot 0 (Embedded) (RAID Mode)
+   Bus Interface: PCI
+   Slot: 0
+   Serial Number: PDNLN0BRH8O054
+   Cache Serial Number: PDNLN0BRH8O054
+   RAID 6 (ADG) Status: Disabled
+   Controller Status: OK
+   Hardware Revision: B
+   Firmware Version: 6.60
+   Rebuild Priority: High
+   Surface Scan Delay: 3 secs
+   Surface Scan Mode: Idle
+   Queue Depth: Automatic
+   Monitor and Performance Delay: 60  min
+   Elevator Sort: Enabled
+   Degraded Performance Optimization: Disabled
+   Inconsistency Repair Policy: Disabled
+   Wait for Cache Room: Disabled
+   Surface Analysis Inconsistency Notification: Disabled
+   Post Prompt Timeout: 15 secs
+   Cache Board Present: False
+   Drive Write Cache: Disabled
+   Total Cache Size: 256 MB
+   SATA NCQ Supported: True
+   Spare Activation Mode: Activate on physical drive failure (default)
+   Controller Temperature (C): 52
+   Number of Ports: 2 Internal only
+   Encryption: Disabled
+   Encryption Login Status: Not Logged In
+   Encryption Allow Plaintext Volumes: Disallow
+   Encryption Key Management Mode: Not Set
+   Encryption Supported: True
+   Encryption RTC SRAM Status: Passed
+   Encryption Master Key reset in Progress: False
+   Encryption Local Key Cache Enabled: False
+   Encryption Crypto Officer Password: Not Set
+   Encryption User Password: Not Set
+   Encryption License Installed: True
+   Encryption FW Locked for Update: Unlocked
+   Encryption Controller Password: Not Set
+   Encryption Local Key Cache Supported: True
+   Encryption Controller Locked: Unlocked
+   Encryption Has Suspended Controller Password: False
+   Encryption Controller Password Unlock Attempts Remaining: 0
+   Encryption Logical Drive(s) Locked For Missing Controller Password: False
+   Encryption Password Recovery Parameters Set: False
+   Encryption Master Key: Not Set
+   Encryption Remote Mode Master Key Mismatch: False
+   Encryption/HP SSD Smart Path Mixing Supported: True
+   Encryption/HP SmartCache Mixing Supported: False
+   Driver Name: hpsa
+   Driver Version: 3.4.10
+   Driver Supports HP SSD Smart Path: True
+   Negotiated PCIe Data Rate: PCIe 3.0 x8 (7880 MB/s)
+   Controller Mode: RAID Mode
+   Controller Mode Reboot: Not Required
+   Latency Scheduler Setting: Disabled
+   Current Power Mode: MaxPerformance
+   12G SAS Exp Card at Port 1I, Box 1, OK
+      Power Supply Status: Not Redundant
+      Vendor ID: HP
+      Serial Number: PDNRB0AZT8C1N3
+      Firmware Version: 2.09
+      Drive Bays: 28
+      Port: 1I
+      Box: 1
+      Location: Internal
+   Expander 378
+      Device Number: 378
+      Firmware Version: 2.09
+      WWID: 50014380345562FD
+      Port: 1I
+      Box: 1
+      Vendor ID: HP
+   Enclosure SEP (Vendor ID HP, Model 12G SAS Exp Card) 377
+      Device Number: 377
+      Firmware Version: 2.09
+      WWID: 50014380345562FC
+      Port: 1I
+      Box: 1
+      Vendor ID: HP
+      Model: 12G SAS Exp Card
+   Physical Drives
+Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:1 (port 1I:box 1:bay 1, SATA, 4000.7 GB, OK)
+Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:2 (port 1I:box 1:bay 2, SATA, 4000.7 GB, OK)
+Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:3 (port 1I:box 1:bay 3, SATA, 4000.7 GB, OK)
+Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:4 (port 1I:box 1:bay 4, SATA, 4000.7 GB, OK)
+Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:5 (port 1I:box 1:bay 5, SATA, 4000.7 GB, OK)
+Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:6 (port 1I:box 1:bay 6, SATA, 4000.7 GB, OK)
+Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:7 (port 1I:box 1:bay 7, SATA, 4000.7 GB, OK)
+Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:8 (port 1I:box 1:bay 8, SATA, 4000.7 GB, OK)
+Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:9 (port 1I:box 1:bay 9, SATA, 4000.7 GB, OK)
+Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:10 (port 1I:box 1:bay 10, SATA, 4000.7 GB, OK)
+Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:11 (port 1I:box 1:bay 11, SATA, 4000.7 GB, OK)
+Smart HBA H240ar in Slot 0 (Embedded)
+      physicaldrive 1I:1:12 (port 1I:box 1:bay 12, SATA, 4000.7 GB, OK)

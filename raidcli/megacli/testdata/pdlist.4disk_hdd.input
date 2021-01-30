@@ -1,0 +1,208 @@
+Adapter #0
+
+Enclosure Device ID: 252
+Slot Number: 0
+Drive's position: DiskGroup: 0, Span: 0, Arm: 0
+Enclosure position: N/A
+Device Id: 19
+WWN: 5000039508008535
+Sequence Number: 2
+Media Error Count: 0
+Other Error Count: 0
+Predictive Failure Count: 0
+Last Predictive Failure Event Seq Number: 0
+PD Type: SAS
+
+Raw Size: 279.396 GB [0x22ecb25c Sectors]
+Non Coerced Size: 278.896 GB [0x22dcb25c Sectors]
+Coerced Size: 278.875 GB [0x22dc0000 Sectors]
+Sector Size:  0
+Logical Sector Size:  0
+Physical Sector Size:  0
+Firmware state: Online, Spun Up
+Device Firmware Level: 5212
+Shield Counter: 0
+Successful diagnostics completion on :  N/A
+SAS Address(0): 0x5000039508008536
+SAS Address(1): 0x0
+Connected Port Number: 3(path0) 
+Inquiry Data: TOSHIBA MBF2300RC       5212EB07PD90AHV1        
+FDE Capable: Not Capable
+FDE Enable: Disable
+Secured: Unsecured
+Locked: Unlocked
+Needs EKM Attention: No
+Foreign State: None 
+Device Speed: 6.0Gb/s 
+Link Speed: 6.0Gb/s 
+Media Type: Hard Disk Device
+Drive:  Not Certified
+Drive Temperature :30C (86.00 F)
+PI Eligibility:  No 
+Drive is formatted for PI information:  No
+PI: No PI
+Port-0 :
+Port status: Active
+Port's Linkspeed: 6.0Gb/s 
+Port-1 :
+Port status: Active
+Port's Linkspeed: Unknown 
+Drive has flagged a S.M.A.R.T alert : No
+
+
+
+Enclosure Device ID: 252
+Slot Number: 1
+Drive's position: DiskGroup: 0, Span: 0, Arm: 1
+Enclosure position: N/A
+Device Id: 18
+WWN: 5000039508008701
+Sequence Number: 2
+Media Error Count: 0
+Other Error Count: 0
+Predictive Failure Count: 0
+Last Predictive Failure Event Seq Number: 0
+PD Type: SAS
+
+Raw Size: 279.396 GB [0x22ecb25c Sectors]
+Non Coerced Size: 278.896 GB [0x22dcb25c Sectors]
+Coerced Size: 278.875 GB [0x22dc0000 Sectors]
+Sector Size:  0
+Logical Sector Size:  0
+Physical Sector Size:  0
+Firmware state: Online, Spun Up
+Device Firmware Level: 5212
+Shield Counter: 0
+Successful diagnostics completion on :  N/A
+SAS Address(0): 0x5000039508008702
+SAS Address(1): 0x0
+Connected Port Number: 2(path0) 
+Inquiry Data: TOSHIBA MBF2300RC       5212EB07PD90AHWF        
+FDE Capable: Not Capable
+FDE Enable: Disable
+Secured: Unsecured
+Locked: Unlocked
+Needs EKM Attention: No
+Foreign State: None 
+Device Speed: 6.0Gb/s 
+Link Speed: 6.0Gb/s 
+Media Type: Hard Disk Device
+Drive:  Not Certified
+Drive Temperature :30C (86.00 F)
+PI Eligibility:  No 
+Drive is formatted for PI information:  No
+PI: No PI
+Port-0 :
+Port status: Active
+Port's Linkspeed: 6.0Gb/s 
+Port-1 :
+Port status: Active
+Port's Linkspeed: Unknown 
+Drive has flagged a S.M.A.R.T alert : No
+
+
+
+Enclosure Device ID: 252
+Slot Number: 2
+Drive's position: DiskGroup: 0, Span: 1, Arm: 0
+Enclosure position: N/A
+Device Id: 17
+WWN: 50000395080086B9
+Sequence Number: 2
+Media Error Count: 0
+Other Error Count: 0
+Predictive Failure Count: 0
+Last Predictive Failure Event Seq Number: 0
+PD Type: SAS
+
+Raw Size: 279.396 GB [0x22ecb25c Sectors]
+Non Coerced Size: 278.896 GB [0x22dcb25c Sectors]
+Coerced Size: 278.875 GB [0x22dc0000 Sectors]
+Sector Size:  0
+Logical Sector Size:  0
+Physical Sector Size:  0
+Firmware state: Online, Spun Up
+Device Firmware Level: 5212
+Shield Counter: 0
+Successful diagnostics completion on :  N/A
+SAS Address(0): 0x50000395080086ba
+SAS Address(1): 0x0
+Connected Port Number: 1(path0) 
+Inquiry Data: TOSHIBA MBF2300RC       5212EB07PD90AHW9        
+FDE Capable: Not Capable
+FDE Enable: Disable
+Secured: Unsecured
+Locked: Unlocked
+Needs EKM Attention: No
+Foreign State: None 
+Device Speed: 6.0Gb/s 
+Link Speed: 6.0Gb/s 
+Media Type: Hard Disk Device
+Drive:  Not Certified
+Drive Temperature :30C (86.00 F)
+PI Eligibility:  No 
+Drive is formatted for PI information:  No
+PI: No PI
+Port-0 :
+Port status: Active
+Port's Linkspeed: 6.0Gb/s 
+Port-1 :
+Port status: Active
+Port's Linkspeed: Unknown 
+Drive has flagged a S.M.A.R.T alert : No
+
+
+
+Enclosure Device ID: 252
+Slot Number: 3
+Drive's position: DiskGroup: 0, Span: 1, Arm: 1
+Enclosure position: N/A
+Device Id: 20
+WWN: 5000039488201035
+Sequence Number: 2
+Media Error Count: 0
+Other Error Count: 0
+Predictive Failure Count: 0
+Last Predictive Failure Event Seq Number: 0
+PD Type: SAS
+
+Raw Size: 279.396 GB [0x22ecb25c Sectors]
+Non Coerced Size: 278.896 GB [0x22dcb25c Sectors]
+Coerced Size: 278.875 GB [0x22dc0000 Sectors]
+Sector Size:  0
+Logical Sector Size:  0
+Physical Sector Size:  0
+Firmware state: Online, Spun Up
+Device Firmware Level: 5212
+Shield Counter: 0
+Successful diagnostics completion on :  N/A
+SAS Address(0): 0x5000039488201036
+SAS Address(1): 0x0
+Connected Port Number: 0(path0) 
+Inquiry Data: TOSHIBA MBF2300RC       5212EB07PD108N2S        
+FDE Capable: Not Capable
+FDE Enable: Disable
+Secured: Unsecured
+Locked: Unlocked
+Needs EKM Attention: No
+Foreign State: None 
+Device Speed: 6.0Gb/s 
+Link Speed: 6.0Gb/s 
+Media Type: Hard Disk Device
+Drive:  Not Certified
+Drive Temperature :29C (84.20 F)
+PI Eligibility:  No 
+Drive is formatted for PI information:  No
+PI: No PI
+Port-0 :
+Port status: Active
+Port's Linkspeed: 6.0Gb/s 
+Port-1 :
+Port status: Active
+Port's Linkspeed: Unknown 
+Drive has flagged a S.M.A.R.T alert : No
+
+
+
+
+Exit Code: 0x00

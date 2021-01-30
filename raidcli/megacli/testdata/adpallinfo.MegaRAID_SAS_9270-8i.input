@@ -1,0 +1,80 @@
+Adapter #0
+
+==============================================================================
+                    Versions
+                ================
+Product Name    : LSI MegaRAID SAS 9270-8i
+Serial No       : SV54952556
+FW Package Build: 23.34.0-0005
+
+                    Mfg. Data
+                ================
+Mfg. Date       : 12/03/15
+Rework Date     : 00/00/00
+Revision No     : 001 
+Battery FRU     : N/A 
+
+                Image Versions in Flash:
+                ================
+BIOS Version       : 5.50.03.0_4.17.08.00_0x06110200
+WebBIOS Version    : 6.1-76-e_76-Rel
+Preboot CLI Version: 05.07-00:#%00011
+FW Version         : 3.460.05-4565
+NVDATA Version     : 2.1507.03-0155
+Boot Block Version : 2.05.00.00-0010
+BOOT Version       : 07.26.26.219
+
+
+                Pending Images in Flash
+                ================
+None
+
+                PCI Info
+                ================
+Controller Id   : 0000
+Vendor Id       : 1000
+Device Id       : 005b
+SubVendorId     : 1000
+SubDeviceId     : 9270
+
+Host Interface  : PCIE
+
+ChipRevision    : D1
+
+Link Speed           : 0
+Number of Frontend Port: 0
+Device Interface  : PCIE
+
+Number of Backend Port: 8
+Port  :  Address
+0        4433221100000000
+1        4433221101000000
+2        4433221102000000
+3        4433221103000000
+4        4433221106000000
+5        4433221107000000
+6        0000000000000000
+7        0000000000000000
+
+                HW Configuration
+                ================
+SAS Address      : 500605b00b5d1940
+BBU              : Present
+Alarm            : Present
+NVRAM            : Present
+Serial Debugger  : Present
+Memory           : Present
+Flash            : Present
+Memory Size      : 1024MB
+TPM              : Absent
+On board Expander: Absent
+Upgrade Key      : Absent
+Temperature sensor for ROC    : Present
+Temperature sensor for controller    : Absent
+
+ROC temperature : 57  degree Celsius
+
+
+                Settings
+                ================
+Current Time                     : 12:19:49 8/9, 2018

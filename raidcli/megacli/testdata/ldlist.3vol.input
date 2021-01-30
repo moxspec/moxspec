@@ -1,0 +1,67 @@
+Adapter 0 -- Virtual Drive Information:
+Virtual Drive: 0 (Target Id: 0)
+Name                :
+RAID Level          : Primary-1, Secondary-0, RAID Level Qualifier-0
+Size                : 222.585 GB
+Is VD emulated      : No
+Mirror Data         : 222.585 GB
+State               : Optimal
+Strip Size          : 256 KB
+Number Of Drives    : 2
+Span Depth          : 1
+Default Cache Policy: WriteBack, ReadAhead, Direct, No Write Cache if Bad BBU
+Current Cache Policy: WriteThrough, ReadAhead, Direct, No Write Cache if Bad BBU
+Default Access Policy: Read/Write
+Current Access Policy: Read/Write
+Disk Cache Policy   : Disk's Default
+Encryption Type     : None
+PI type: No PI
+
+Is VD Cached: No
+
+
+Virtual Drive: 1 (Target Id: 1)
+Name                :
+RAID Level          : Primary-0, Secondary-0, RAID Level Qualifier-0
+Size                : 9.094 TB
+Is VD emulated      : Yes
+Parity Size         : 0
+State               : Optimal
+Strip Size          : 256 KB
+Number Of Drives    : 1
+Span Depth          : 1
+Default Cache Policy: WriteBack, ReadAhead, Direct, No Write Cache if Bad BBU
+Current Cache Policy: WriteThrough, ReadAhead, Direct, No Write Cache if Bad BBU
+Default Access Policy: Read/Write
+Current Access Policy: Read/Write
+Disk Cache Policy   : Disk's Default
+Encryption Type     : None
+PI type: No PI
+
+Is VD Cached: No
+
+
+Virtual Drive: 2 (Target Id: 2)
+Name                :
+RAID Level          : Primary-1, Secondary-0, RAID Level Qualifier-0
+Size                : 222.585 GB
+Sector Size         : 512
+Is VD emulated      : No
+Mirror Data         : 222.585 GB
+State               : Optimal
+Strip Size          : 256 KB
+Number Of Drives per span:2
+Span Depth          : 2
+Default Cache Policy: WriteThrough, ReadAheadNone, Direct, No Write Cache if Bad BBU
+Current Cache Policy: WriteThrough, ReadAheadNone, Direct, No Write Cache if Bad BBU
+Default Access Policy: Read/Write
+Current Access Policy: Read/Write
+Disk Cache Policy   : Disabled
+Encryption Type     : None
+Bad Blocks Exist: No
+Is VD Cached: No
+Number of Spans: 2
+Span: 0 - Number of PDs: 2
+
+
+Exit Code: 0x00

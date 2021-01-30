@@ -1,0 +1,69 @@
+Initiator at ID #0
+
+Device is a Hard disk
+  Enclosure #                             : 0
+  Slot #                                  : 0
+  SAS Address                             : 0000000-0-0000-0000
+  State                                   : Missing (MIS)
+  Manufacturer                            :
+  Model Number                            :
+  Firmware Revision                       :
+  Serial No                               : BTHC529203WB400VGN
+  GUID                                    : N/A
+  Drive Type                              : Undetermined
+
+Device is a Hard disk
+  Enclosure #                             : 0
+  Slot #                                  : 0
+  SAS Address                             : 0000000-0-0000-0000
+  State                                   : Missing (MIS)
+  Manufacturer                            :
+  Model Number                            :
+  Firmware Revision                       :
+  Serial No                               : BTHC5292040B400VGN
+  GUID                                    : N/A
+  Drive Type                              : Undetermined
+
+Device is a Hard disk
+  Enclosure #                             : 1
+  Slot #                                  : 0
+  PI Supported                            : No
+  SAS Address                             : 4433221-1-0000-0000
+  State                                   : Optimal (OPT)
+  Size (in MB)/(in sectors)               : 381554/781422767
+  Manufacturer                            : ATA
+  Model Number                            : INTEL SSDSC2BX40
+  Firmware Revision                       : 0110
+  Serial No                               : BTHC528202X0400VGN
+  GUID                                    : 55cd2e404c08fc7e
+  Protocol                                : SATA
+  Drive Type                              : SATA_SSD
+
+Device is a Hard disk
+  Enclosure #                             : 1
+  Slot #                                  : 4
+  PI Supported                            : No
+  SAS Address                             : 4433221-1-0400-0000
+  State                                   : Optimal (OPT)
+  Size (in MB)/(in sectors)               : 381554/781422767
+  Manufacturer                            : ATA
+  Model Number                            : INTEL SSDSC2BX40
+  Firmware Revision                       : 0110
+  Serial No                               : BTHC52820151400VGN
+  GUID                                    : 55cd2e404c08f4ae
+  Protocol                                : SATA
+  Drive Type                              : SATA_SSD
+
+
+Device is a Enclosure services device
+  Enclosure #                             : 2
+  Slot #                                  : 24
+  SAS Address                             : 500056b-3-4f5e-69fd
+  State                                   : Standby (SBY)
+  Manufacturer                            : DP
+  Model Number                            : BP14G+EXP
+  Firmware Revision                       : 2.17
+  Serial No                               :
+  GUID                                    : N/A
+  Protocol                                : SAS
+  Device Type                             : Enclosure services device`, "\n")

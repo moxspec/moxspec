@@ -1,0 +1,23 @@
+IR volume 1
+  Volume ID                               : 322
+  Status of volume                        : Inactive, Okay (OKY)
+  Volume wwid                             : 07f652e74f1fbcfd
+  RAID level                              : RAID0
+  Size (in MB)                            : 1522064
+  Physical hard disks                     :
+  PHY[0] Enclosure#/Slot#                 : 0:0
+  PHY[1] Enclosure#/Slot#                 : 0:0
+  PHY[2] Enclosure#/Slot#                 : 1:1
+  PHY[3] Enclosure#/Slot#                 : 0:0
+IR volume 2
+  Volume ID                               : 323
+  PI Supported                            : No
+  Status of volume                        : Failed (FLD)
+  Volume wwid                             : 038476c328bd908d
+  RAID level                              : RAID0
+  Size (in MB)                            : 1522064
+  Physical hard disks                     :
+  PHY[0] Enclosure#/Slot#                 : 1:0
+  PHY[1] Enclosure#/Slot#                 : 0:0
+  PHY[2] Enclosure#/Slot#                 : 1:2
+  PHY[3] Enclosure#/Slot#                 : 1:4
