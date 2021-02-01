@@ -44,7 +44,7 @@ Secondary, in order to support various OSs, the tool needed to be vendor indepen
 # Installation
 
 ```
-$ go get github.com/actapio/mox/cmd/moxspec
+$ go get github.com/actapio/moxspec/cmd/mox
 $ sudo ${GOPATH}/bin/mox
 ```
 
