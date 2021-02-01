@@ -40,12 +40,15 @@ Secondary, in order to support various OSs, the tool needed to be vendor indepen
 # Development
 
 - Go 1.9 or later
+- Docker
 
 # Installation
 
 ```
-$ go get github.com/actapio/moxspec/cmd/mox
-$ sudo ${GOPATH}/bin/mox
+$ git clone https://github.com/actapio/moxspec.git
+$ cd moxspec
+$ make mox
+$ sudo ${GOPATH}/bin/mox show
 ```
 
 # Quick start
