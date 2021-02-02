@@ -14,10 +14,12 @@ It helps performance engineering, hardware review, troubleshooting, asset manage
 
 # Why needed / Story behind MoxSpec
 1. Operation at scale with [Open Compute Project (OCP)](https://www.opencompute.org/) / White boxes
+
 When the team adopted Open Compute, instead of benefit out of "part level" replacement, the onsite service team had a challenge troubleshooting / identifying what component needs to be replaced, tool like MoxSpec, allowing SEL decoded to human readable information, was needed to allow onsite service team easily identify what to be replaced such as a DIMM slot.
 Democratizing the chance to gain another level of operational scalability to us by adopting open technologies like OCP was crucial and a holistic approach to even a 19” OEM servers was needed.
 
 2. Metrics - Standardization
+
 In a large scale server ops team, life cycle management is one of the key items. In order to get this job done, monitoring of comprehensive hardware metrics such as reads/writes to SSD/NVMe are essential. These are not something IPMI/OOB designed to address. First of all, parsing the output of existing utilities such as smartctl, lspci, .. didn't work out well due to dependency on subcommands, and more importantly those utilities had much more information than needed, which would end up with not a small resource impact when the number of servers become thousands and millions. 
 Secondary, in order to support various OSs, the tool needed to be vendor independent and had to take a path of using Linux system programming level commands such as Sys, ioctl et al. This allowed to support many OEM/ODM servers and OSs.
  
