@@ -20,4 +20,4 @@ Here are guidance how to
 - Develop code
   - Please conduct unit test in order to make sure your changes work as designed
 - Add and commit your changes and push your code to remote branch
-- Create a Pull Request to main repository
+- Create a Pull Request to master repository
