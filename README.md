@@ -296,4 +296,4 @@ Last Update:   Sat, 03 Oct 2020 14:15:27 +0900
 You can ask questions and give feedback in the following ways:
 
 -   [Create a GitHub issue](https://github.com/actapio/moxspec/issues)
--   [In the public M3 Slack](https://moxspec-all.slack.com/ssb/redirect)
+-   [In the public MoxSpec Slack](https://moxspec-all.slack.com/ssb/redirect)
