@@ -8,12 +8,12 @@ MoxSpec
 
 # What is MoxSpec
 
-MoxSpec is a utility to retrieve system hardware information and makes it structured. Minimal footprint and portability by its own hardware interaction engines. 
+MoxSpec is a utility to retrieve system hardware information and make it structured. Minimal footprint and portability by its own hardware interaction engines. 
 Information is retrieved and collected directly from standard hardware interfaces such as CPUID, SMBIOS, PCIe configuration register, MSR, and others. Parsing other command-line tools output is not used except for proprietary hardware interfaces such as a hardware RAID because it's slow and unreliable.
 It helps performance engineering, hardware review, troubleshooting, asset management, and any other hardware related task.
 
 # Why needed / Story behind MoxSpec
-1. Operation at scale with [Open Compute Project (OCP)](https://www.opencompute.org/) / White boxses
+1. Operation at scale with [Open Compute Project (OCP)](https://www.opencompute.org/) / White boxes
 When the team adopted Open Compute, instead of benefit out of "part level" replacement, the onsite service team had a challenge troubleshooting / identifying what component needs to be replaced, tool like MoxSpec, allowing SEL decoded to human readable information, was needed to allow onsite service team easily identify what to be replaced such as a DIMM slot.
 Democratizing the chance to gain another level of operational scalability to us by adopting open technologies like OCP was crucial and a holistic approach to even a 19” OEM servers was needed.
 
