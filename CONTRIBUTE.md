@@ -11,8 +11,8 @@ Note : Please make sure upgrade code base to the latest version before you open 
 You can contribute Moxspec by submitting bug fix or developping new features. 
 When you would like to add or change codes, we recommend you to open Pull Request for master repository.
 Here are guidance how to 
-- Folk master repository into your GitHub Organization such as {your organization}/Moxspec
-- Clone code from folked repository in your workspace
+- Fork master repository into your GitHub Organization such as {your organization}/moxspec
+- Clone code from forked repository in your workspace
 - Create new branch for your changes
   - Use branch name "bug-fix/{fixname}" when you submit a bug fix
   - Use branch name "new-feature/{new feature name}" when you develop new features
