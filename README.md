@@ -23,7 +23,7 @@ Democratizing the chance to gain another level of operational scalability to us 
 In a large scale server ops team, life cycle management is one of the key items. In order to get this job done, monitoring of comprehensive hardware metrics such as reads/writes to SSD/NVMe are essential. These are not something IPMI/OOB designed to address. First of all, parsing the output of existing utilities such as smartctl, lspci, .. didn't work out well due to dependency on subcommands, and more importantly those utilities had much more information than needed, which would end up with not a small resource impact when the number of servers become thousands and millions. 
 Secondary, in order to support various OSs, the tool needed to be vendor independent and had to take a path of using Linux system programming level commands such as Sys, ioctl et al. This allowed to support many OEM/ODM servers and OSs.
  
-![](https://i.imgur.com/xLtWICn.png)
+![](https://user-images.githubusercontent.com/44848317/106935759-a147cc80-66d0-11eb-883d-30c34a851231.png)
 
 
 # Example use cases
