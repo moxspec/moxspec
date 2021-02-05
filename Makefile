@@ -25,7 +25,6 @@ endif
 clean: ## clean all artifacts
 	-rm -rf bin/
 	-rm -rf c.out
-	-rm -rf $(RPMBUILD)
 
 init: ## install requirements 
 	go get -u github.com/digitalocean/go-smbios/smbios
