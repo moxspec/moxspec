@@ -5,6 +5,45 @@ import (
 	"testing"
 )
 
+func TestCastToFloat64(t *testing.T) {
+	var got float64
+	var err error
+	tests := []struct {
+		val interface{}
+		ex  float64
+	}{
+		{"248", 0},
+		{int64(248), 248.0},
+		{int32(248), 248.0},
+		{int16(248), 248.0},
+		{int8(2), 2.0},
+		{byte(48), 48.0},
+		{248, 248.0},
+		{uint64(248), 248.0},
+		{uint32(248), 248.0},
+		{uint16(248), 248.0},
+		{uint8(248), 248.0},
+		{uint(248), 248.0},
+		{float64(248.0), 248.0},
+		{float32(248.0), 248.0},
+		{248.0, 248.0},
+		{struct{ dummy float64 }{248.0}, 0},
+		{[]float64{}, 0},
+		{map[string]string{"248": "248"}, 0},
+	}
+
+	for _, test := range tests {
+		tt := test
+
+		t.Run(fmt.Sprintf("%+v", tt), func(t *testing.T) {
+			got, err = CastToFloat64(tt.val)
+			if got != tt.ex {
+				t.Errorf("test: %+v, got: %f, expect: %f (err:%s)", tt, got, tt.ex, err)
+			}
+		})
+	}
+}
+
 func TestConvUnit(t *testing.T) {
 	var got string
 	var err error
