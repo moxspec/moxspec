@@ -47,13 +47,16 @@ var units = map[float64]string{
 	BaseBinary * YOTTA: "YiB",
 }
 
-func castToFloat64(value interface{}) (float64, error) {
+// CastToFloat64 converts the given value to float64
+func CastToFloat64(value interface{}) (float64, error) {
 	var v float64
 	switch value.(type) {
 	case float64:
 		v = value.(float64)
 	case float32:
 		v = float64(value.(float32))
+	case uint:
+		v = float64(value.(uint))
 	case uint64:
 		v = float64(value.(uint64))
 	case uint32:
@@ -62,6 +65,8 @@ func castToFloat64(value interface{}) (float64, error) {
 		v = float64(value.(uint16))
 	case byte:
 		v = float64(value.(byte))
+	case int:
+		v = float64(value.(int))
 	case int64:
 		v = float64(value.(int64))
 	case int32:
@@ -78,7 +83,7 @@ func castToFloat64(value interface{}) (float64, error) {
 
 // ConvUnitDec returns the string representation of value in 1000 base with given unit.
 func ConvUnitDec(value interface{}, target float64) (string, error) {
-	v, err := castToFloat64(value)
+	v, err := CastToFloat64(value)
 	if err != nil {
 		return "", err
 	}
@@ -87,7 +92,7 @@ func ConvUnitDec(value interface{}, target float64) (string, error) {
 
 // ConvUnitBin returns the string representation of value in 1024 base with given unit.
 func ConvUnitBin(value interface{}, target float64) (string, error) {
-	v, err := castToFloat64(value)
+	v, err := CastToFloat64(value)
 	if err != nil {
 		return "", err
 	}
@@ -97,7 +102,7 @@ func ConvUnitBin(value interface{}, target float64) (string, error) {
 // ConvUnitDecFit returns the string representation of value in 1000 base with given unit.
 // The unit will be optimized automatically.
 func ConvUnitDecFit(value interface{}, target float64) (string, error) {
-	v, err := castToFloat64(value)
+	v, err := CastToFloat64(value)
 	if err != nil {
 		return "", err
 	}
@@ -107,7 +112,7 @@ func ConvUnitDecFit(value interface{}, target float64) (string, error) {
 // ConvUnitBinFit returns the string representation of value in 1024 base with given unit.
 // The unit will be optimized automatically.
 func ConvUnitBinFit(value interface{}, target float64) (string, error) {
-	v, err := castToFloat64(value)
+	v, err := CastToFloat64(value)
 	if err != nil {
 		return "", err
 	}
