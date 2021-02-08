@@ -2,8 +2,8 @@ MoxSpec
 ===
 
 [![CircleCI](https://circleci.com/gh/actapio/moxspec.svg?style=shield&circle-token=1989e1b4d727682e9f80a6fabe13110c282f168c)](https://circleci.com/gh/actapio/moxspec)
-[![Maintainability](https://api.codeclimate.com/v1/badges/5492dc939c4a22157f4c/maintainability)](https://codeclimate.com/repos/6015659fc02da6014c007b18/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/5492dc939c4a22157f4c/test_coverage)](https://codeclimate.com/repos/6015659fc02da6014c007b18/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/f47676ba4fc60ce3f39a/maintainability)](https://codeclimate.com/github/actapio/moxspec/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/f47676ba4fc60ce3f39a/test_coverage)](https://codeclimate.com/github/actapio/moxspec/test_coverage)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 # What is MoxSpec
