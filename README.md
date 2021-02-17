@@ -293,6 +293,10 @@ Hostname:      sample.co.jp
 Last Update:   Sat, 03 Oct 2020 14:15:27 +0900
 ```
 
+## MoxSpec in motion (Video)
+- [MoxSpec Basic](https://youtu.be/OBqJqbRCxFo)
+- [MoxSpec JSON](https://youtu.be/4t2rPp0PTAY)
+
 ## Contributing
 
 You can ask questions and give feedback in the following ways:
