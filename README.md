@@ -1,7 +1,7 @@
 MoxSpec
 ===
 
-[![CircleCI](https://circleci.com/gh/actapio/moxspec.svg?style=shield&circle-token=1989e1b4d727682e9f80a6fabe13110c282f168c)](https://circleci.com/gh/actapio/moxspec)
+[![CircleCI](https://circleci.com/gh/moxspec/moxspec.svg?style=shield&circle-token=1989e1b4d727682e9f80a6fabe13110c282f168c)](https://circleci.com/gh/actapio/moxspec)
 [![Maintainability](https://api.codeclimate.com/v1/badges/f47676ba4fc60ce3f39a/maintainability)](https://codeclimate.com/github/actapio/moxspec/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/f47676ba4fc60ce3f39a/test_coverage)](https://codeclimate.com/github/actapio/moxspec/test_coverage)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
