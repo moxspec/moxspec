@@ -15,7 +15,7 @@ It helps performance engineering, hardware review, troubleshooting, asset manage
 # Why needed / Story behind MoxSpec
 1. Operation at scale with [Open Compute Project (OCP)](https://www.opencompute.org/) / White boxes
 
-When the team adopted Open Compute, instead of benefit out of "part level" replacement, the onsite service team had a challenge troubleshooting / identifying what component needs to be replaced, tool like MoxSpec, allowing SEL decoded to human readable information, was needed to allow onsite service team easily identify what to be replaced such as a DIMM slot.
+When you adopt Open Compute, instead of getting the benefit out of "part level" replacement for a better standardization and operational efficiency, the onsite service team might face to a challenge in the troubleshooting to identify what component needs to be replaced. [MoxSpec-OCPSEL](https://github.com/moxspec/moxspec-ocpsel) is developed and allows SEL (System Event Log) decoded to human readable information, which allows onsite service team easily identify what to be replaced such as a DIMM slot.
 Democratizing the chance to gain another level of operational scalability to us by adopting open technologies like OCP was crucial and a holistic approach to even a 19” OEM servers was needed.
 
 2. Metrics - Standardization
