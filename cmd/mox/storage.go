@@ -47,19 +47,13 @@ func shapeDisk(r *model.Report, pcidevs *pci.Devices, cli *app) {
 
 		equal := func(t string, ts ...string) bool {
 			return matcher(func(l string) bool {
-				if bspec.Driver == l {
-					return true
-				}
-				return false
+				return (bspec.Driver == l)
 			}, t, ts...)
 		}
 
 		prefix := func(t string, ts ...string) bool {
 			return matcher(func(l string) bool {
-				if strings.HasPrefix(bspec.Driver, l) {
-					return true
-				}
-				return false
+				return strings.HasPrefix(bspec.Driver, l)
 			}, t, ts...)
 		}
 
@@ -225,10 +219,7 @@ func shapeRAIDController(bspec *model.PCIBaseSpec, noRaidCli bool) (*model.RAIDC
 
 	prefix := func(t string, ts ...string) bool {
 		return matcher(func(l string) bool {
-			if strings.HasPrefix(ctl.Driver, l) {
-				return true
-			}
-			return false
+			return strings.HasPrefix(ctl.Driver, l)
 		}, t, ts...)
 	}
 	if !noRaidCli {
