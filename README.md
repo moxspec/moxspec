@@ -47,7 +47,7 @@ Secondary, in order to support various OSs, the tool needed to be vendor indepen
 # Installation
 
 ```
-$ git clone https://github.com/actapio/moxspec.git
+$ git clone https://github.com/moxspec/moxspec.git
 $ cd moxspec
 $ make mox
 $ sudo ${GOPATH}/bin/mox show
@@ -301,5 +301,5 @@ Last Update:   Sat, 03 Oct 2020 14:15:27 +0900
 
 You can ask questions and give feedback in the following ways:
 
--   [Create a GitHub issue](https://github.com/actapio/moxspec/issues)
+-   [Create a GitHub issue](https://github.com/moxspec/moxspec/issues)
 -   [In the public MoxSpec Slack](https://moxspec-all.slack.com/ssb/redirect)
