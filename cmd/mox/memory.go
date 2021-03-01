@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/actapio/moxspec/edac"
-	"github.com/actapio/moxspec/model"
-	"github.com/actapio/moxspec/smbios"
+	"github.com/moxspec/moxspec/edac"
+	"github.com/moxspec/moxspec/model"
+	"github.com/moxspec/moxspec/smbios"
 )
 
 func shapeMemory(r *model.Report, sm []*smbios.MemoryDevice) {

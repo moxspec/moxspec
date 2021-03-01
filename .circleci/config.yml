@@ -4,7 +4,7 @@ image_config: &image_config
   IMAGE_TAG: 7
 jobs:
   build:
-    working_directory: /go/src/github.com/actapio/moxspec
+    working_directory: /go/src/github.com/moxspec/moxspec
     environment:
       <<: *image_config
     docker:

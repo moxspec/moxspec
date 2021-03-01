@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/actapio/moxspec/model"
-	"github.com/actapio/moxspec/platform"
+	"github.com/moxspec/moxspec/model"
+	"github.com/moxspec/moxspec/platform"
 )
 
 func shapeMisc(r *model.Report) {

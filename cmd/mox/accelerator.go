@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/actapio/moxspec/gpu/nvidia"
-	"github.com/actapio/moxspec/model"
-	"github.com/actapio/moxspec/pci"
+	"github.com/moxspec/moxspec/gpu/nvidia"
+	"github.com/moxspec/moxspec/model"
+	"github.com/moxspec/moxspec/pci"
 )
 
 func shapeAccelerater(r *model.Report, pcidevs *pci.Devices) {

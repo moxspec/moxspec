@@ -1,7 +1,7 @@
 package netlink
 
 import (
-	"github.com/actapio/moxspec/loglet"
+	"github.com/moxspec/moxspec/loglet"
 )
 
 var log *loglet.Logger

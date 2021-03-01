@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/actapio/moxspec/loglet"
-	"github.com/actapio/moxspec/model"
+	"github.com/moxspec/moxspec/loglet"
+	"github.com/moxspec/moxspec/model"
 )
 
 const (

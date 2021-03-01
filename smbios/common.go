@@ -3,8 +3,8 @@ package smbios
 import (
 	"encoding/binary"
 
-	"github.com/actapio/moxspec/util"
 	gosmbios "github.com/digitalocean/go-smbios/smbios"
+	"github.com/moxspec/moxspec/util"
 )
 
 // Structure represents a smbios table

@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/actapio/moxspec/ipmi"
-	"github.com/actapio/moxspec/model"
-	"github.com/actapio/moxspec/util"
+	"github.com/moxspec/moxspec/ipmi"
+	"github.com/moxspec/moxspec/model"
+	"github.com/moxspec/moxspec/util"
 )
 
 func shapeBMC(r *model.Report) {

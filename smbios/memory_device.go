@@ -1,8 +1,8 @@
 package smbios
 
 import (
-	"github.com/actapio/moxspec/util"
 	gosmbios "github.com/digitalocean/go-smbios/smbios"
+	"github.com/moxspec/moxspec/util"
 )
 
 // MemoryDevice represents a memory module spec

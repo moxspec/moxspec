@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/actapio/moxspec/model"
+	"github.com/moxspec/moxspec/model"
 )
 
 func show(cli *app) error {

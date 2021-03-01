@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/actapio/moxspec/util"
+	"github.com/moxspec/moxspec/util"
 )
 
 var releases = []string{

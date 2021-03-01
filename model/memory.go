@@ -3,7 +3,7 @@ package model
 import (
 	"fmt"
 
-	"github.com/actapio/moxspec/util"
+	"github.com/moxspec/moxspec/util"
 )
 
 // Helth Check Threshold

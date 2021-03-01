@@ -5,8 +5,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/actapio/moxspec/loglet"
-	"github.com/actapio/moxspec/util"
+	"github.com/moxspec/moxspec/loglet"
+	"github.com/moxspec/moxspec/util"
 )
 
 var log *loglet.Logger

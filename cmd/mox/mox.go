@@ -6,10 +6,10 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/actapio/moxspec/loglet"
-	"github.com/actapio/moxspec/model"
-	"github.com/actapio/moxspec/pci"
-	"github.com/actapio/moxspec/smbios"
+	"github.com/moxspec/moxspec/loglet"
+	"github.com/moxspec/moxspec/model"
+	"github.com/moxspec/moxspec/pci"
+	"github.com/moxspec/moxspec/smbios"
 )
 
 var (

@@ -3,7 +3,7 @@ package sas3ircu
 import (
 	"strings"
 
-	"github.com/actapio/moxspec/raidcli"
+	"github.com/moxspec/moxspec/raidcli"
 )
 
 // Controller represents a mpt controller

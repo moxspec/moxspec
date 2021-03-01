@@ -1,11 +1,11 @@
 package main
 
 import (
-	"github.com/actapio/moxspec/eth"
-	"github.com/actapio/moxspec/model"
-	"github.com/actapio/moxspec/netlink"
-	"github.com/actapio/moxspec/nw"
-	"github.com/actapio/moxspec/pci"
+	"github.com/moxspec/moxspec/eth"
+	"github.com/moxspec/moxspec/model"
+	"github.com/moxspec/moxspec/netlink"
+	"github.com/moxspec/moxspec/nw"
+	"github.com/moxspec/moxspec/pci"
 )
 
 func shapeNetwork(r *model.Report, pcidevs *pci.Devices) {

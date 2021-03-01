@@ -3,7 +3,7 @@ package model
 import (
 	"fmt"
 
-	"github.com/actapio/moxspec/pci"
+	"github.com/moxspec/moxspec/pci"
 )
 
 // PCIBaseSpec represents a basic pci spec

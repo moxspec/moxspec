@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/actapio/moxspec/util"
+	"github.com/moxspec/moxspec/util"
 )
 
 type logExtData struct {
