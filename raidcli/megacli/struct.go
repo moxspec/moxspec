@@ -1,6 +1,6 @@
 package megacli
 
-import "github.com/actapio/moxspec/raidcli"
+import "github.com/moxspec/moxspec/raidcli"
 
 // Controller represents a megacli controller
 type Controller struct {

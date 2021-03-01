@@ -3,8 +3,8 @@ package main
 import (
 	"strings"
 
-	"github.com/actapio/moxspec/model"
-	"github.com/actapio/moxspec/smbios"
+	"github.com/moxspec/moxspec/model"
+	"github.com/moxspec/moxspec/smbios"
 )
 
 func shapePowerSupply(r *model.Report, sm []*smbios.PowerSupply) {

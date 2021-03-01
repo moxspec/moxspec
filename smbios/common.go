@@ -3,7 +3,7 @@ package smbios
 import (
 	"encoding/binary"
 
-	"github.com/actapio/moxspec/util"
+	"github.com/moxspec/moxspec/util"
 	gosmbios "github.com/digitalocean/go-smbios/smbios"
 )
 

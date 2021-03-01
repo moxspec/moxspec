@@ -3,12 +3,12 @@ package main
 import (
 	"strings"
 
-	"github.com/actapio/moxspec/cpu"
-	"github.com/actapio/moxspec/cpuid"
-	"github.com/actapio/moxspec/model"
-	"github.com/actapio/moxspec/msr"
-	"github.com/actapio/moxspec/smbios"
-	"github.com/actapio/moxspec/util"
+	"github.com/moxspec/moxspec/cpu"
+	"github.com/moxspec/moxspec/cpuid"
+	"github.com/moxspec/moxspec/model"
+	"github.com/moxspec/moxspec/msr"
+	"github.com/moxspec/moxspec/smbios"
+	"github.com/moxspec/moxspec/util"
 )
 
 func shapeProcessor(r *model.Report, sm []*smbios.Processor) {

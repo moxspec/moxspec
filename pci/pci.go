@@ -4,8 +4,8 @@ import (
 	"io/ioutil"
 	"path/filepath"
 
-	"github.com/actapio/moxspec/loglet"
-	"github.com/actapio/moxspec/util"
+	"github.com/moxspec/moxspec/loglet"
+	"github.com/moxspec/moxspec/util"
 )
 
 var pciidsPossible = []string{

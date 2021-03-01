@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/actapio/moxspec/model"
-	"github.com/actapio/moxspec/pci"
+	"github.com/moxspec/moxspec/model"
+	"github.com/moxspec/moxspec/pci"
 )
 
 func shapeAllPCIDevices(r *model.Report, devs *pci.Devices) {

@@ -3,7 +3,7 @@ package smbios
 import (
 	"fmt"
 
-	"github.com/actapio/moxspec/loglet"
+	"github.com/moxspec/moxspec/loglet"
 	gosmbios "github.com/digitalocean/go-smbios/smbios"
 )
 

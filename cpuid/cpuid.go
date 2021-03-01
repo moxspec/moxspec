@@ -1,6 +1,6 @@
 package cpuid
 
-import "github.com/actapio/moxspec/loglet"
+import "github.com/moxspec/moxspec/loglet"
 
 type parser func(*Processor) error
 

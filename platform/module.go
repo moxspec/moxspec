@@ -3,7 +3,7 @@ package platform
 import (
 	"strings"
 
-	"github.com/actapio/moxspec/util"
+	"github.com/moxspec/moxspec/util"
 )
 
 // IsLoadedModule returns if a module is loaded

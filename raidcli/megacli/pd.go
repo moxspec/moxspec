@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/actapio/moxspec/raidcli"
+	"github.com/moxspec/moxspec/raidcli"
 )
 
 func getAllPD(num int) ([]*PhyDrive, error) {

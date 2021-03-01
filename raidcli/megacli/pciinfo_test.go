@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/actapio/moxspec/raidcli"
+	"github.com/moxspec/moxspec/raidcli"
 	"github.com/kylelemons/godebug/pretty"
 )
 

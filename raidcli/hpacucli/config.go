@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/actapio/moxspec/raidcli"
-	"github.com/actapio/moxspec/util"
+	"github.com/moxspec/moxspec/raidcli"
+	"github.com/moxspec/moxspec/util"
 )
 
 var lvmap = map[string]raidcli.Level{

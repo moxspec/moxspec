@@ -3,8 +3,8 @@ package nvidia
 import (
 	"encoding/xml"
 
-	"github.com/actapio/moxspec/pci"
-	"github.com/actapio/moxspec/util"
+	"github.com/moxspec/moxspec/pci"
+	"github.com/moxspec/moxspec/util"
 )
 
 // Devices represents GPUs

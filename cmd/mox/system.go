@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/actapio/moxspec/model"
-	"github.com/actapio/moxspec/smbios"
+	"github.com/moxspec/moxspec/model"
+	"github.com/moxspec/moxspec/smbios"
 )
 
 func shapeSystem(r *model.Report, sm *smbios.System) {

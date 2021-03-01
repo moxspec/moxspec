@@ -6,7 +6,7 @@ import (
 	"os"
 	"unsafe"
 
-	"github.com/actapio/moxspec/util"
+	"github.com/moxspec/moxspec/util"
 )
 
 const (

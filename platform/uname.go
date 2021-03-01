@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"syscall"
 
-	"github.com/actapio/moxspec/util"
+	"github.com/moxspec/moxspec/util"
 )
 
 // Uname returns system name, release, nodename and machine

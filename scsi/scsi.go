@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/actapio/moxspec/loglet"
-	"github.com/actapio/moxspec/util"
+	"github.com/moxspec/moxspec/loglet"
+	"github.com/moxspec/moxspec/util"
 )
 
 // 7.8.5 Device Constituents VPD page

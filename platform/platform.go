@@ -1,6 +1,6 @@
 package platform
 
-import "github.com/actapio/moxspec/loglet"
+import "github.com/moxspec/moxspec/loglet"
 
 var log *loglet.Logger
 

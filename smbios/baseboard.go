@@ -1,7 +1,7 @@
 package smbios
 
 import (
-	"github.com/actapio/moxspec/util"
+	"github.com/moxspec/moxspec/util"
 	gosmbios "github.com/digitalocean/go-smbios/smbios"
 )
 

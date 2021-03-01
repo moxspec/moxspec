@@ -6,8 +6,8 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/actapio/moxspec/loglet"
-	"github.com/actapio/moxspec/spc"
+	"github.com/moxspec/moxspec/loglet"
+	"github.com/moxspec/moxspec/spc"
 )
 
 const (

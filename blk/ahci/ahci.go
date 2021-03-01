@@ -5,9 +5,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/actapio/moxspec/blk"
-	"github.com/actapio/moxspec/loglet"
-	"github.com/actapio/moxspec/util"
+	"github.com/moxspec/moxspec/blk"
+	"github.com/moxspec/moxspec/loglet"
+	"github.com/moxspec/moxspec/util"
 )
 
 var log *loglet.Logger

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/actapio/moxspec/util"
+	"github.com/moxspec/moxspec/util"
 )
 
 // batteryStatus represents battery unit presence

@@ -1,7 +1,7 @@
 package cpuid
 
 import (
-	"github.com/actapio/moxspec/util"
+	"github.com/moxspec/moxspec/util"
 )
 
 func parseBrandString(cpu *Processor) error {

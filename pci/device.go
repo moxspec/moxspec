@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/actapio/moxspec/util"
+	"github.com/moxspec/moxspec/util"
 )
 
 // NewDevice creates and initializes a new Device using contents inside of given path
