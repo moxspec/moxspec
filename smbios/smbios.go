@@ -3,8 +3,8 @@ package smbios
 import (
 	"fmt"
 
-	"github.com/moxspec/moxspec/loglet"
 	gosmbios "github.com/digitalocean/go-smbios/smbios"
+	"github.com/moxspec/moxspec/loglet"
 )
 
 var log *loglet.Logger

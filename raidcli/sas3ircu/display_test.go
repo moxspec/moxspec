@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/moxspec/moxspec/raidcli"
 	"github.com/kylelemons/godebug/pretty"
+	"github.com/moxspec/moxspec/raidcli"
 )
 
 func TestSplitSections(t *testing.T) {

@@ -8,8 +8,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/moxspec/moxspec/raidcli"
 	"github.com/kylelemons/godebug/pretty"
+	"github.com/moxspec/moxspec/raidcli"
 )
 
 func TestParseLDList(t *testing.T) {

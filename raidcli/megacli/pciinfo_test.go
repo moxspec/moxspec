@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/moxspec/moxspec/raidcli"
 	"github.com/kylelemons/godebug/pretty"
+	"github.com/moxspec/moxspec/raidcli"
 )
 
 func TestParsePCIInfoSingle(t *testing.T) {

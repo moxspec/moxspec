@@ -1,8 +1,8 @@
 package smbios
 
 import (
-	"github.com/moxspec/moxspec/util"
 	gosmbios "github.com/digitalocean/go-smbios/smbios"
+	"github.com/moxspec/moxspec/util"
 )
 
 // Chassis represents a chassis spec
