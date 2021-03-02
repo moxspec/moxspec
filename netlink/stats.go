@@ -14,9 +14,39 @@ const (
 
 func getStats(nli *netlinkInterface, ifname string) (*RtnlLinkStats64, error) {
 	req := statsRequest()
-	nlms, err := nli.post(req)
+	err := nli.post(req)
 	if err != nil {
 		return nil, err
+	}
+
+	var nlms []syscall.NetlinkMessage
+
+	for {
+		buf, err := nli.recv()
+		if err != nil {
+			return nil, err
+		}
+
+		nlmsTemp, err := syscall.ParseNetlinkMessage(buf)
+		if err != nil {
+			log.Debugf("netlink message parse failed: %s", err)
+			return nil, err
+		}
+		nlms = append(nlms, nlmsTemp...)
+
+		nlmDone := false
+		for _, nlm := range nlmsTemp {
+			log.Debugf("NLM header: 0x%0X", nlm.Header.Type)
+			if nlm.Header.Type == syscall.NLMSG_DONE {
+				log.Debug("NLMSG_DONE found")
+				nlmDone = true
+				break
+			}
+		}
+
+		if nlmDone {
+			break
+		}
 	}
 
 	stats, err := parseStats(nlms, ifname)
@@ -85,6 +115,7 @@ func getTargetAttrs(nlms []syscall.NetlinkMessage, target string) []syscall.Netl
 			if attr.Attr.Type == syscall.IFLA_IFNAME {
 				// remove null charactor ('\0')
 				ifname := strings.Trim(string(attr.Value), "\x00")
+				log.Debugf("ifname: %s", ifname)
 
 				if ifname == target {
 					return attrs
