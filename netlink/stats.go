@@ -2,10 +2,12 @@ package netlink
 
 import (
 	"bytes"
+	"context"
 	"encoding/binary"
 	"fmt"
 	"strings"
 	"syscall"
+	"time"
 )
 
 const (
@@ -22,7 +24,9 @@ func getStats(nli *netlinkInterface, ifname string) (*RtnlLinkStats64, error) {
 	var nlms []syscall.NetlinkMessage
 
 	for {
-		buf, err := nli.recv()
+		ctx, cancel := context.WithTimeout(context.Background(), 3*time.Second)
+		defer cancel()
+		buf, err := nli.recv(ctx)
 		if err != nil {
 			return nil, err
 		}
