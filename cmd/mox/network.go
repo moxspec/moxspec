@@ -61,6 +61,8 @@ func shapeNetwork(r *model.Report, pcidevs *pci.Devices) {
 				mod.CableLength = ed.Module.CableLength
 				intf.Module = mod
 			}
+		} else {
+			log.Debug(err)
 		}
 
 		nl := netlink.NewDecoder(intf.Name)
@@ -70,6 +72,8 @@ func shapeNetwork(r *model.Report, pcidevs *pci.Devices) {
 			intf.TxErrors = nl.Stats.TxErrors
 			intf.RxDropped = nl.Stats.RxDropped
 			intf.TxDropped = nl.Stats.TxDropped
+		} else {
+			log.Debug(err)
 		}
 
 		c.Interfaces = append(c.Interfaces, intf)
