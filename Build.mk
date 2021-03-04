@@ -10,7 +10,7 @@ mox: test ## build just mox
 		-a -tags netgo -installsuffix netgo \
 		-ldflags "-s -w -X main.version=$(PKGVER) -X main.revision=`git rev-parse --short HEAD` -extldflags '-static'" \
 		-o bin/$@ cmd/$@/*.go
-	cd bin && ln -s $@ lsdiag && ln -s $@ lsraid && ln -s $@ lssn
+	-cd bin && ln -s $@ lsdiag && ln -s $@ lsraid && ln -s $@ lssn
 
 test: goimports lint vet ## run unit tests
 	$(GO) test -coverprofile c.out ./...
