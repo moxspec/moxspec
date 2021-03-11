@@ -28,6 +28,8 @@ func (t Topology) Packages() []*Package {
 }
 
 // Package represents a processor package (socket)
+// NOTE: MCM processor may have multiple nodes per package
+//       e.g: Zen: up to four nodes per package
 type Package struct {
 	ID            uint16
 	ThrottleCount uint16
