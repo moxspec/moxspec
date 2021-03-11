@@ -52,30 +52,10 @@ func NewDecoder() *Topology {
 // Decode makes Topology satisfy the mox.Decoder interface
 func (t *Topology) Decode() error {
 	for _, cpudir := range util.FilterPrefixedDirs(t.path, "cpu") {
-
-		topodir := filepath.Join(cpudir, "topology")
-		if !util.Exists(topodir) {
-			// e.g: cpufreq, cpuidle
-			continue
-		}
-
 		log.Debugf("scanning %s", cpudir)
-
-		pid, err := util.LoadUint16(filepath.Join(topodir, "physical_package_id"))
+		pid, nid, cid, err := findProcessorID(cpudir)
 		if err != nil {
-			log.Warnf("%s has no physical_package_id file", topodir)
-			continue
-		}
-
-		nid, err := findNodeID(cpudir)
-		if err != nil {
-			log.Warn(err.Error())
-			continue
-		}
-
-		cid, err := util.LoadUint16(filepath.Join(topodir, "core_id"))
-		if err != nil {
-			log.Warnf("%s has no core_id file", topodir)
+			log.Debug(err.Error())
 			continue
 		}
 
@@ -86,34 +66,51 @@ func (t *Topology) Decode() error {
 		}
 
 		p := t.packages[pid]
+		p.decode(cpudir)
+
 		if !p.hasNode(nid) {
 			p.nodes[nid] = newNode(nid)
 		}
 
-		pThrottle, err := util.LoadUint16(filepath.Join(cpudir, "thermal_throttle", "package_throttle_count"))
-		if err == nil {
-			p.ThrottleCount = pThrottle
-		}
-
 		n := p.nodes[nid]
-		if !n.hasCore(cid) {
-			c := newCore(cid)
-			list := filepath.Join(topodir, "thread_siblings_list")
-			ls, err := util.LoadString(list)
-			if err != nil {
-				log.Warnf("could not load %s", list)
-				continue
-			}
-			c.Threads = parseListString(ls)
-			cThrottle, err := util.LoadUint16(filepath.Join(cpudir, "thermal_throttle", "core_throttle_count"))
-			if err == nil {
-				c.ThrottleCount = cThrottle
-			}
-
-			n.cores[cid] = c
+		if n.hasCore(cid) {
+			continue // to skip a sibling core
 		}
+
+		c := newCore(cid)
+		err = c.decode(cpudir)
+		if err != nil {
+			log.Warn(err.Error())
+			continue
+		}
+		n.cores[cid] = c
 	}
 	return nil
+}
+
+func findProcessorID(cpudir string) (pid uint16, nid uint16, cid uint16, err error) {
+	topodir := filepath.Join(cpudir, "topology")
+	pid, err = findPackageID(topodir)
+	if err != nil {
+		return
+	}
+	nid, err = findNodeID(cpudir)
+	if err != nil {
+		return
+	}
+	cid, err = findCoreID(topodir)
+	if err != nil {
+		return
+	}
+	return
+}
+
+func findPackageID(topodir string) (uint16, error) {
+	pid, err := util.LoadUint16(filepath.Join(topodir, "physical_package_id"))
+	if err != nil {
+		return 0, fmt.Errorf("%s has no physical_package_id file", topodir)
+	}
+	return pid, nil
 }
 
 func findNodeID(cpudir string) (uint16, error) {
@@ -131,4 +128,12 @@ func findNodeID(cpudir string) (uint16, error) {
 	id, err := strconv.Atoi(idstr)
 
 	return uint16(id), err
+}
+
+func findCoreID(topodir string) (uint16, error) {
+	cid, err := util.LoadUint16(filepath.Join(topodir, "core_id"))
+	if err != nil {
+		return 0, fmt.Errorf("%s has no core_id file", topodir)
+	}
+	return cid, nil
 }
