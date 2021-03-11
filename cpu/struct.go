@@ -1,6 +1,13 @@
 package cpu
 
-import "sort"
+import (
+	"fmt"
+	"path/filepath"
+	"sort"
+	"strings"
+
+	"github.com/moxspec/moxspec/util"
+)
 
 // Topology represents a processor topology
 type Topology struct {
@@ -122,9 +129,43 @@ type Core struct {
 	ID            uint16
 	ThrottleCount uint16
 	Threads       []uint16
+	BaseFreq      uint64
+	MaxFreq       uint64
+	MinFreq       uint64
+	Scaling       struct {
+		Driver             string
+		Governor           string
+		AvailableGovernors []string
+		CurFreq            uint64
+		MaxFreq            uint64
+		MinFreq            uint64
+	}
 }
 
 // ThreadCount returns a thread count
 func (c Core) ThreadCount() int {
 	return len(c.Threads)
+}
+
+func (c *Core) decode(cpudir string) error {
+	list := filepath.Join(filepath.Join(cpudir, "topology"), "thread_siblings_list")
+	ls, err := util.LoadString(list)
+	if err != nil {
+		return fmt.Errorf("could not load %s", list)
+	}
+	c.Threads = parseListString(ls)
+
+	c.ThrottleCount, _ = util.LoadUint16(filepath.Join(cpudir, "thermal_throttle", "core_throttle_count"))
+	c.BaseFreq, _ = util.LoadUint64(filepath.Join(cpudir, "cpufreq", "base_frequency"))
+	c.MaxFreq, _ = util.LoadUint64(filepath.Join(cpudir, "cpufreq", "cpuinfo_max_freq"))
+	c.MinFreq, _ = util.LoadUint64(filepath.Join(cpudir, "cpufreq", "cpuinfo_min_freq"))
+	c.Scaling.CurFreq, _ = util.LoadUint64(filepath.Join(cpudir, "cpufreq", "scaling_cur_freq"))
+	c.Scaling.MaxFreq, _ = util.LoadUint64(filepath.Join(cpudir, "cpufreq", "scaling_max_freq"))
+	c.Scaling.MinFreq, _ = util.LoadUint64(filepath.Join(cpudir, "cpufreq", "scaling_min_freq"))
+	c.Scaling.Governor, _ = util.LoadString(filepath.Join(cpudir, "cpufreq", "scaling_governor"))
+	c.Scaling.Driver, _ = util.LoadString(filepath.Join(cpudir, "cpufreq", "scaling_driver"))
+	govs, _ := util.LoadString(filepath.Join(cpudir, "cpufreq", "scaling_available_governors"))
+	c.Scaling.AvailableGovernors = strings.Fields(govs)
+
+	return nil
 }
