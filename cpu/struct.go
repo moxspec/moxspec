@@ -85,6 +85,15 @@ func (p Package) Nodes() []*Node {
 	return l
 }
 
+func (p *Package) decode(cpudir string) error {
+	pThrottle, err := util.LoadUint16(filepath.Join(cpudir, "thermal_throttle", "package_throttle_count"))
+	if err != nil {
+		return err
+	}
+	p.ThrottleCount = pThrottle
+	return nil
+}
+
 // Node represents a numa node
 type Node struct {
 	ID    uint16
