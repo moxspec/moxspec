@@ -61,9 +61,9 @@ func (t *Topology) Decode() error {
 
 		log.Debugf("scanning %s", cpudir)
 
-		pid, err := util.LoadUint16(filepath.Join(topodir, "physical_package_id"))
+		pid, err := findPackageID(topodir)
 		if err != nil {
-			log.Warnf("%s has no physical_package_id file", topodir)
+			log.Warn(err.Error())
 			continue
 		}
 
@@ -73,9 +73,9 @@ func (t *Topology) Decode() error {
 			continue
 		}
 
-		cid, err := util.LoadUint16(filepath.Join(topodir, "core_id"))
+		cid, err := findCoreID(topodir)
 		if err != nil {
-			log.Warnf("%s has no core_id file", topodir)
+			log.Warn(err.Error())
 			continue
 		}
 
@@ -116,6 +116,14 @@ func (t *Topology) Decode() error {
 	return nil
 }
 
+func findPackageID(topodir string) (uint16, error) {
+	pid, err := util.LoadUint16(filepath.Join(topodir, "physical_package_id"))
+	if err != nil {
+		return 0, fmt.Errorf("%s has no physical_package_id file", topodir)
+	}
+	return pid, nil
+}
+
 func findNodeID(cpudir string) (uint16, error) {
 	fs := util.FilterPrefixedLinks(cpudir, "node")
 	if len(fs) != 1 {
@@ -131,4 +139,12 @@ func findNodeID(cpudir string) (uint16, error) {
 	id, err := strconv.Atoi(idstr)
 
 	return uint16(id), err
+}
+
+func findCoreID(topodir string) (uint16, error) {
+	cid, err := util.LoadUint16(filepath.Join(topodir, "core_id"))
+	if err != nil {
+		return 0, fmt.Errorf("%s has no core_id file", topodir)
+	}
+	return cid, nil
 }
