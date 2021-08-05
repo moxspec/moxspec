@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"strings"
 
 	"github.com/moxspec/moxspec/model"
 )
@@ -395,6 +396,22 @@ func writeDownNetwork(r *model.Report, p *printer) {
 			sb.append(newIndentedBlock(ctl.DiagSummaries()))
 		}
 
+		s.block.append(sb)
+	}
+
+	if r.Network.BondInterfaces == nil {
+		p.append(s)
+		return
+	}
+	for _, ctl := range r.Network.BondInterfaces {
+		s.block.appendf(ctl.Summary())
+		sb := new(block)
+		sb.append(fmt.Sprintf("Link: %s, type bond, slaves %v, mode %s %s", ctl.Name, ctl.Slaves, ctl.BondAttrs.Mode, ctl.BondAttrs.XmitHashPolicy))
+		var iplist []string
+		for _, i := range ctl.LinkAttrs.IPAddrs {
+			iplist = append(iplist, fmt.Sprintf("%s/%d", i.Addr, i.MaskSize))
+		}
+		sb.append(fmt.Sprintf("Intf: %s, %s %s", ctl.Name, ctl.LinkAttrs.HWAddr, strings.Join(iplist, ", ")))
 		s.block.append(sb)
 	}
 	p.append(s)
