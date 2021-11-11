@@ -5,6 +5,10 @@ import (
 	"github.com/moxspec/moxspec/util"
 )
 
+const (
+	typeDetailPersistent = "Non-volatile"
+)
+
 // MemoryDevice represents a memory module spec
 type MemoryDevice struct {
 	TotalWidth        uint16
@@ -24,6 +28,17 @@ type MemoryDevice struct {
 	FormFactor        string
 	Type              string
 	TypeDetail        []string
+}
+
+// IsPersistent returns whether MemoryDevice is persistent memory.
+func (m *MemoryDevice) IsPersistent() bool {
+	for _, deteil := range m.TypeDetail {
+		if deteil == typeDetailPersistent {
+			return true
+		}
+	}
+
+	return false
 }
 
 func parseMemoryDevice(s *gosmbios.Structure) *MemoryDevice {
