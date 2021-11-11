@@ -93,12 +93,18 @@ type MemoryModule struct {
 	Speed           uint16  `json:"speed,omitempty"`
 	ConfiguredSpeed uint16  `json:"configuredSpeed,omitempty"`
 	Voltage         float32 `json:"voltage,omitempty"`
+	IsPersistent    bool    `json:"isPersistent,omitempty"`
 	MemorySizeSpec
 }
 
 // Summary returns summarized string
 func (m MemoryModule) Summary() string {
-	return fmt.Sprintf("%s %s-%d %s", m.Manufacturer, m.Type, m.Speed, m.SizeString())
+	summary := fmt.Sprintf("%s %s-%d %s", m.Manufacturer, m.Type, m.Speed, m.SizeString())
+	if m.IsPersistent {
+		summary = fmt.Sprintf("%s (Persistent)", summary)
+	}
+
+	return summary
 }
 
 // MemoryController represents a memory controller

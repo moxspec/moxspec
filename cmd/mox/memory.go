@@ -33,6 +33,7 @@ func shapeMemory(r *model.Report, sm []*smbios.MemoryDevice) {
 			m.ConfiguredSpeed = mem.ConfiguredSpeed
 			m.Size = uint64(mem.Size) * 1000 * 1000 * 1000 // Size should be bytes
 			m.Voltage = mem.ConfiguredVoltage
+			m.IsPersistent = mem.IsPersistent()
 
 			total += uint64(m.Size)
 			memories = append(memories, m)
