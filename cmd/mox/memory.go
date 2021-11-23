@@ -21,7 +21,6 @@ func shapeMemory(r *model.Report, sm []*smbios.MemoryDevice) {
 		if mem.Size == 0 {
 			empty++
 		} else {
-
 			m := new(model.MemoryModule)
 			m.Locator = mem.DeviceLocator
 			m.Manufacturer = mem.Manufacturer
