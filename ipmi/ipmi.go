@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"ghe.corp.yahoo.co.jp/mox/mox/loglet"
-	"ghe.corp.yahoo.co.jp/mox/mox/platform"
-	"ghe.corp.yahoo.co.jp/mox/mox/util"
+	"github.com/moxspec/moxspec/loglet"
+	"github.com/moxspec/moxspec/platform"
+	"github.com/moxspec/moxspec/util"
 )
 
 var log *loglet.Logger
