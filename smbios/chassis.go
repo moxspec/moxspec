@@ -1,6 +1,8 @@
 package smbios
 
 import (
+	"fmt"
+
 	gosmbios "github.com/digitalocean/go-smbios/smbios"
 	"github.com/moxspec/moxspec/util"
 )
@@ -19,7 +21,11 @@ type Chassis struct {
 	SKUNumber          string
 }
 
-func parseChassis(s *gosmbios.Structure) *Chassis {
+func parseChassis(s *gosmbios.Structure) (*Chassis, error) {
+	if s == nil {
+		return nil, fmt.Errorf("nil given")
+	}
+
 	c := new(Chassis)
 
 	c.Manufacturer = util.ShortenVendorName(getStringsSet(s, 0x04))
@@ -35,7 +41,7 @@ func parseChassis(s *gosmbios.Structure) *Chassis {
 
 	log.Debugf("%+v", c)
 
-	return c
+	return c, nil
 }
 
 func parseChassisState(b uint8) string {

@@ -1,6 +1,8 @@
 package smbios
 
 import (
+	"fmt"
+
 	gosmbios "github.com/digitalocean/go-smbios/smbios"
 	"github.com/moxspec/moxspec/util"
 )
@@ -20,7 +22,11 @@ type PowerSupply struct {
 	HotReplaceable   bool
 }
 
-func parsePowerSupply(s *gosmbios.Structure) *PowerSupply {
+func parsePowerSupply(s *gosmbios.Structure) (*PowerSupply, error) {
+	if s == nil {
+		return nil, fmt.Errorf("nil given")
+	}
+
 	ps := new(PowerSupply)
 
 	ps.Location = getStringsSet(s, 0x05)
@@ -36,7 +42,7 @@ func parsePowerSupply(s *gosmbios.Structure) *PowerSupply {
 
 	log.Debugf("%+v", ps)
 
-	return ps
+	return ps, nil
 }
 
 func parsePowerSupplyCap(w uint16) uint16 {

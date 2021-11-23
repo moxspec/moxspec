@@ -1,6 +1,8 @@
 package smbios
 
 import (
+	"fmt"
+
 	gosmbios "github.com/digitalocean/go-smbios/smbios"
 	"github.com/moxspec/moxspec/util"
 )
@@ -33,7 +35,11 @@ type Processor struct {
 	ThreadCount       uint16
 }
 
-func parseProcessor(s *gosmbios.Structure) *Processor {
+func parseProcessor(s *gosmbios.Structure) (*Processor, error) {
+	if s == nil {
+		return nil, fmt.Errorf("nil given")
+	}
+
 	p := new(Processor)
 
 	p.SocketDesignation = getStringsSet(s, 0x04)
@@ -56,7 +62,7 @@ func parseProcessor(s *gosmbios.Structure) *Processor {
 
 	log.Debugf("%+v", p)
 
-	return p
+	return p, nil
 }
 
 func parseProcessorStatus(b uint8) []string {
