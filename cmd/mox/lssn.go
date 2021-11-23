@@ -81,7 +81,7 @@ func writeDownProcessorSerialNumber(tbl *table, r *model.ProcessorReport) {
 
 func writeDownMemorySerialNumber(tbl *table, r *model.MemoryReport) {
 	for _, m := range r.Modules {
-		spec := fmt.Sprintf("%s-%d %s", m.Type, m.Speed, m.SizeString())
+		spec := m.Spec()
 		model := fmt.Sprintf("%s %s", m.Manufacturer, m.PartNumber)
 		tbl.append("Memory", model, m.SerialNumber, m.Locator, spec)
 	}

@@ -140,6 +140,10 @@ func (s *Spec) Decode() error {
 	log.Debugf("found smbios v%s", s.Version())
 
 	for _, tbl := range tbls {
+		if tbl == nil {
+			continue
+		}
+
 		st := new(Structure)
 
 		st.Header = new(Header)
@@ -148,41 +152,42 @@ func (s *Spec) Decode() error {
 
 		log.Debugf("type id: %x, handle id: %x", st.Header.Type, st.Header.Handle)
 
+		var err error = nil
 		switch st.Header.Type {
 		case biosInformation:
 			log.Debug("type: bios_information")
-			st.Data = parseBIOS(tbl)
+			st.Data, err = parseBIOS(tbl)
 		case systemInformation:
 			log.Debug("type: system_information")
-			st.Data = parseSystem(tbl)
+			st.Data, err = parseSystem(tbl)
 		case baseboardInformation:
 			log.Debug("type: baseboard_information")
-			st.Data = parseBaseboard(tbl)
+			st.Data, err = parseBaseboard(tbl)
 		case systemEnclosure:
 			log.Debug("type: system_enclosure")
-			st.Data = parseChassis(tbl)
+			st.Data, err = parseChassis(tbl)
 		case processorInformation:
 			log.Debug("type: processor_information")
-			st.Data = parseProcessor(tbl)
+			st.Data, err = parseProcessor(tbl)
 		case cacheInformation:
 			log.Debug("type: cache_information")
-			st.Data = parseCache(tbl)
+			st.Data, err = parseCache(tbl)
 		case memoryDevice:
 			log.Debug("type: memory_device")
-			st.Data = parseMemoryDevice(tbl)
+			st.Data, err = parseMemoryDevice(tbl)
 		case systemPowerSupply:
 			log.Debug("type: system_power_supply")
-			st.Data = parsePowerSupply(tbl)
+			st.Data, err = parsePowerSupply(tbl)
 		default:
 			log.Debug("non-supported record type")
 			continue
 		}
 
-		if st.Data != nil {
-			s.Records[st.Header.Type] = append(s.Records[st.Header.Type], st)
-		} else {
+		if err != nil {
 			log.Debug("could not decode record")
+			continue
 		}
+		s.Records[st.Header.Type] = append(s.Records[st.Header.Type], st)
 	}
 
 	return nil

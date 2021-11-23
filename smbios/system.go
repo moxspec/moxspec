@@ -1,6 +1,8 @@
 package smbios
 
 import (
+	"fmt"
+
 	gosmbios "github.com/digitalocean/go-smbios/smbios"
 	"github.com/moxspec/moxspec/util"
 )
@@ -15,7 +17,11 @@ type System struct {
 	Family       string
 }
 
-func parseSystem(s *gosmbios.Structure) *System {
+func parseSystem(s *gosmbios.Structure) (*System, error) {
+	if s == nil {
+		return nil, fmt.Errorf("nil given")
+	}
+
 	sinfo := new(System)
 
 	sinfo.Manufacturer = util.ShortenVendorName(getStringsSet(s, 0x04))
@@ -27,5 +33,5 @@ func parseSystem(s *gosmbios.Structure) *System {
 
 	log.Debugf("%+v", sinfo)
 
-	return sinfo
+	return sinfo, nil
 }

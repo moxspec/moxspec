@@ -90,6 +90,7 @@ type MemoryModule struct {
 	SerialNumber    string  `json:"serialNumber,omitempty"`
 	FormFactor      string  `json:"formFactor,omitempty"`
 	Type            string  `json:"type,omitempty"`
+	TypeDetail      string  `json:"typeDetail,omitempty"`
 	Speed           uint16  `json:"speed,omitempty"`
 	ConfiguredSpeed uint16  `json:"configuredSpeed,omitempty"`
 	Voltage         float32 `json:"voltage,omitempty"`
@@ -97,14 +98,19 @@ type MemoryModule struct {
 	MemorySizeSpec
 }
 
-// Summary returns summarized string
-func (m MemoryModule) Summary() string {
-	summary := fmt.Sprintf("%s %s-%d %s", m.Manufacturer, m.Type, m.Speed, m.SizeString())
+// Spec returns module spec string
+func (m MemoryModule) Spec() string {
+	summary := fmt.Sprintf("%s-%d %s %s", m.Type, m.Speed, m.FormFactor, m.SizeString())
 	if m.IsPersistent {
 		summary = fmt.Sprintf("%s (Persistent)", summary)
 	}
 
 	return summary
+}
+
+// Summary returns summarized string
+func (m MemoryModule) Summary() string {
+	return fmt.Sprintf("%s %s", m.Manufacturer, m.Spec())
 }
 
 // MemoryController represents a memory controller

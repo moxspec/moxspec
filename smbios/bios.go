@@ -1,6 +1,8 @@
 package smbios
 
 import (
+	"fmt"
+
 	gosmbios "github.com/digitalocean/go-smbios/smbios"
 	"github.com/moxspec/moxspec/util"
 )
@@ -15,7 +17,11 @@ type BIOS struct {
 	Characteristics []string
 }
 
-func parseBIOS(s *gosmbios.Structure) *BIOS {
+func parseBIOS(s *gosmbios.Structure) (*BIOS, error) {
+	if s == nil {
+		return nil, fmt.Errorf("nil given")
+	}
+
 	bios := new(BIOS)
 
 	bios.Vendor = util.ShortenVendorName(getStringsSet(s, 0x04))
@@ -26,5 +32,5 @@ func parseBIOS(s *gosmbios.Structure) *BIOS {
 
 	log.Debugf("%+v", bios)
 
-	return bios
+	return bios, nil
 }

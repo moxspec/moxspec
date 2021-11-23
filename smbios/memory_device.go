@@ -1,12 +1,17 @@
 package smbios
 
 import (
+	"fmt"
+
 	gosmbios "github.com/digitalocean/go-smbios/smbios"
 	"github.com/moxspec/moxspec/util"
 )
 
 const (
 	typeDetailPersistent = "Non-volatile"
+	typeDetailUDIMM      = "Unbuffered (Unregistered)"
+	typeDetailRDIMM      = "Registered (Buffered)"
+	typeDetailLRDIMM     = "LRDIMM"
 )
 
 // MemoryDevice represents a memory module spec
@@ -41,8 +46,47 @@ func (m *MemoryDevice) IsPersistent() bool {
 	return false
 }
 
-func parseMemoryDevice(s *gosmbios.Structure) *MemoryDevice {
+func getModuleType(typeDetail []string) string {
+	const unknown = -1
+	const unbuffered = 0
+	const registered = 1
+	const loadReduced = 2
+
+	moduleTypeString := map[int]string{
+		unknown:     "DIMM",
+		unbuffered:  "UDIMM",
+		registered:  "RDIMM",
+		loadReduced: "LRDIMM",
+	}
+
+	moduleType := unknown
+	for _, detail := range typeDetail {
+		switch detail {
+		case typeDetailUDIMM:
+			if unbuffered > moduleType {
+				moduleType = unbuffered
+			}
+		case typeDetailRDIMM:
+			if registered > moduleType {
+				moduleType = registered
+			}
+		case typeDetailLRDIMM:
+			if loadReduced > moduleType {
+				moduleType = loadReduced
+			}
+		}
+
+	}
+
+	return moduleTypeString[moduleType]
+}
+
+func parseMemoryDevice(s *gosmbios.Structure) (*MemoryDevice, error) {
 	mem := new(MemoryDevice)
+
+	if len(s.Strings) == 0 {
+		return nil, fmt.Errorf("no data")
+	}
 
 	mem.DeviceLocator = s.Strings[0]
 	mem.TotalWidth = getWord(s, 0x08) // 0xffff == unknown
@@ -59,13 +103,18 @@ func parseMemoryDevice(s *gosmbios.Structure) *MemoryDevice {
 	mem.MinVoltage = float32(getWord(s, 0x22)) / 1000
 	mem.MaxVoltage = float32(getWord(s, 0x24)) / 1000
 	mem.ConfiguredVoltage = float32(getWord(s, 0x26)) / 1000
-	mem.FormFactor = parseFormFactor(getWord(s, 0x0E))
 	mem.Type = parseMemoryType(getByte(s, 0x12))
 	mem.TypeDetail = parseMemoryTypeDetail(getWord(s, 0x13))
 
+	formFactor := parseFormFactor(getWord(s, 0x0E))
+	if formFactor == "DIMM" {
+		formFactor = getModuleType(mem.TypeDetail)
+	}
+	mem.FormFactor = formFactor
+
 	log.Debugf("%+v", mem)
 
-	return mem
+	return mem, nil
 }
 
 func parseMemorySize(b uint16, b2 uint32) uint32 {
