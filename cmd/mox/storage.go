@@ -280,6 +280,7 @@ func shapeMegaRAIDController(ctl *model.RAIDController) {
 	ctl.SerialNumber = mctl.SerialNumber
 	ctl.AdapterID = fmt.Sprintf("%d", mctl.Number)
 
+	ldrvGroupMap := make(map[uint]bool)
 	log.Debug("scanning log drives")
 
 	// ctl.LogDrives may contain pass-through drives that must be separated to ctl.PassthroughDrives.
@@ -324,6 +325,8 @@ func shapeMegaRAIDController(ctl *model.RAIDController) {
 			continue
 		}
 
+		ldrvGroupMap[uint(ldrv.SCSITarget)] = true
+
 		log.Debugf("megacli has the ld data for the target %d", ldrv.SCSITarget)
 		ldrv.RAIDLv = string(ld.RAIDLv)
 		ldrv.CachePolicy = ld.CachePolicy
@@ -348,6 +351,34 @@ func shapeMegaRAIDController(ctl *model.RAIDController) {
 		log.Debugf("found unconfigured phy drive: %s", p.Model)
 		ctl.UnconfDrives = append(ctl.UnconfDrives, p)
 	}
+
+	for _, ld := range mctl.LogDrives {
+		if ldrvGroupMap[ld.GroupID] {
+			continue
+		}
+
+		ldrv := shapeMegaRAIDLogDrive(ld)
+		ldrv.Degraded = true
+
+		for _, pd := range ld.PhyDrives {
+			p := shapeMegaRAIDPhyDisk(pd, mctl)
+			log.Debugf("found phy drive: %s", p.Model)
+			ldrv.PhyDrives = append(ldrv.PhyDrives, p)
+		}
+
+		ctl.LogDrives = append(ctl.LogDrives, ldrv)
+	}
+}
+
+func shapeMegaRAIDLogDrive(ld *megacli.LogDrive) *model.LogDrive {
+	l := new(model.LogDrive)
+	l.Size = ld.Size
+	l.RAIDLv = string(ld.RAIDLv)
+	l.CachePolicy = ld.CachePolicy
+	l.Status = ld.State
+	l.StripeSize = ld.StripSize
+	l.GroupLabel = ld.Label
+	return l
 }
 
 func shapeMegaRAIDPhyDisk(pd *megacli.PhyDrive, ctl *megacli.Controller) *model.PhyDrive {
