@@ -1,6 +1,8 @@
 package smbios
 
 import (
+	"fmt"
+
 	gosmbios "github.com/digitalocean/go-smbios/smbios"
 )
 
@@ -22,7 +24,11 @@ type Cache struct {
 	Associativity       string
 }
 
-func parseCache(s *gosmbios.Structure) *Cache {
+func parseCache(s *gosmbios.Structure) (*Cache, error) {
+	if s == nil {
+		return nil, fmt.Errorf("nil given")
+	}
+
 	c := new(Cache)
 
 	c.SocketDesignation = getStringsSet(s, 0x04)
@@ -39,7 +45,7 @@ func parseCache(s *gosmbios.Structure) *Cache {
 
 	log.Debugf("%+v", c)
 
-	return c
+	return c, nil
 }
 
 func parseCacheConfiguration(b uint16) (opmode string, enabled bool, location string, socketed bool, level uint8) {

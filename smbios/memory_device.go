@@ -1,6 +1,8 @@
 package smbios
 
 import (
+	"fmt"
+
 	gosmbios "github.com/digitalocean/go-smbios/smbios"
 	"github.com/moxspec/moxspec/util"
 )
@@ -79,8 +81,12 @@ func getModuleType(typeDetail []string) string {
 	return moduleTypeString[moduleType]
 }
 
-func parseMemoryDevice(s *gosmbios.Structure) *MemoryDevice {
+func parseMemoryDevice(s *gosmbios.Structure) (*MemoryDevice, error) {
 	mem := new(MemoryDevice)
+
+	if len(s.Strings) == 0 {
+		return nil, fmt.Errorf("no data")
+	}
 
 	mem.DeviceLocator = s.Strings[0]
 	mem.TotalWidth = getWord(s, 0x08) // 0xffff == unknown
@@ -108,7 +114,7 @@ func parseMemoryDevice(s *gosmbios.Structure) *MemoryDevice {
 
 	log.Debugf("%+v", mem)
 
-	return mem
+	return mem, nil
 }
 
 func parseMemorySize(b uint16, b2 uint32) uint32 {

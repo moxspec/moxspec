@@ -1,6 +1,8 @@
 package smbios
 
 import (
+	"fmt"
+
 	gosmbios "github.com/digitalocean/go-smbios/smbios"
 	"github.com/moxspec/moxspec/util"
 )
@@ -15,7 +17,11 @@ type Baseboard struct {
 	BoardType    string
 }
 
-func parseBaseboard(s *gosmbios.Structure) *Baseboard {
+func parseBaseboard(s *gosmbios.Structure) (*Baseboard, error) {
+	if s == nil {
+		return nil, fmt.Errorf("nil given")
+	}
+
 	bboard := new(Baseboard)
 
 	bboard.Manufacturer = util.ShortenVendorName(getStringsSet(s, 0x04))
@@ -25,5 +31,5 @@ func parseBaseboard(s *gosmbios.Structure) *Baseboard {
 	bboard.AssetTag = getStringsSet(s, 0x08)
 
 	log.Debugf("%+v", bboard)
-	return bboard
+	return bboard, nil
 }
