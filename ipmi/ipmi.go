@@ -1,9 +1,11 @@
 package ipmi
 
 import (
+	"context"
 	"fmt"
 	"os/exec"
 	"strings"
+	"time"
 
 	"github.com/moxspec/moxspec/loglet"
 	"github.com/moxspec/moxspec/platform"
@@ -48,10 +50,13 @@ func (d *Device) Decode() error {
 		return fmt.Errorf("ipmitool is not installed")
 	}
 
-	rev, err := util.LoadString("/sys/class/ipmi/ipmi0/device/bmc/firmware_revision")
-	if err == nil {
-		d.Firmware = rev
+	ctx, cancel := context.WithTimeout(context.Background(), time.Second*5)
+	defer cancel()
+	rev, err := util.LoadStringWithContext(ctx, "/sys/class/ipmi/ipmi0/device/bmc/firmware_revision")
+	if err != nil {
+		return err
 	}
+	d.Firmware = rev
 
 	log.Debugf("running %s lan print", cmdpath)
 	res, _ := util.Exec(cmdpath, "lan", "print") // ipmitool always return 1
