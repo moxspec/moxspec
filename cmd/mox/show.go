@@ -39,9 +39,6 @@ func show(cli *app) error {
 	writeDownBMC(r, p)
 	writeDownPowerSupply(r, p)
 	writeDownPlatform(r, p)
-	if cli.getString("h") != "" {
-		writeDownLastUpdate(r, p)
-	}
 	p.show()
 
 	return nil
