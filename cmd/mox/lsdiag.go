@@ -22,7 +22,6 @@ func lsdiag() (int, error) {
 	loglet.SetLevel(loglet.INFO)
 
 	cli := newAppWithoutCmd(os.Args)
-	cli.appendFlag("h", "", "hostname")
 	err := cli.parse()
 	if err != nil {
 		return exitUnhealthy, err
