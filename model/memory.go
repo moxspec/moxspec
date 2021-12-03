@@ -2,6 +2,7 @@ package model
 
 import (
 	"fmt"
+	"strings"
 
 	"github.com/moxspec/moxspec/util"
 )
@@ -105,12 +106,12 @@ func (m MemoryModule) Spec() string {
 		summary = fmt.Sprintf("%s (Persistent)", summary)
 	}
 
-	return summary
+	return strings.TrimSpace(summary)
 }
 
 // Summary returns summarized string
 func (m MemoryModule) Summary() string {
-	return fmt.Sprintf("%s %s", m.Manufacturer, m.Spec())
+	return strings.TrimSpace(fmt.Sprintf("%s %s", m.Manufacturer, m.Spec()))
 }
 
 // MemoryController represents a memory controller
