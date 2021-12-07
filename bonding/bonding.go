@@ -43,7 +43,6 @@ type BondAttrs struct {
 	AdUserPortKey   int
 	AdActorSystem   net.HardwareAddr
 	TlbDynamicLb    int
-	//MiiStatus int
 }
 
 // Decode make BondInterface satisfy the mox.Decoder interface
@@ -106,8 +105,6 @@ func (intf *BondInterface) Decode() error {
 		intf.BondAttrs.AdUserPortKey = stats.AdUserPortKey
 		intf.BondAttrs.AdActorSystem = stats.AdActorSystem
 		intf.BondAttrs.TlbDynamicLb = stats.TlbDynamicLb
-		//intf.BondAttrs.MiiStatus = stats.MiiStatus
-
 	}
 	ipaddresses, err := netlink.AddrList(bli, netlink.FAMILY_V4)
 	if err != nil {

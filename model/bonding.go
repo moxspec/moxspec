@@ -37,22 +37,6 @@ type BondAttrs struct {
 	FailOverMac     string   `json:"fail_over_mac,omitempty"`
 	XmitHashPolicy  string   `json:"xmit_hash_policy,omitempty"`
 	LacpRate        string   `json:"lacp_rate,omitempty"`
-
-	// We don't currently need the following values, but netlink provides them
-	// Just put here as a reference
-	// MiiStatus       int      `json:"mii_status,omitempty"`
-	// ResendIgmp      int
-	// NumPeerNotif    int
-	// AllSlavesActive int
-	// MinLinks        int
-	// LpInterval      int
-	// PacketsPerSlave int
-	// AdSelect        BondAdSelect
-	// AdInfo          *BondAdInfo
-	// AdActorSysPrio  int
-	// AdUserPortKey   int
-	// AdActorSystem   net.HardwareAddr
-	// TlbDynamicLb    int
 }
 
 // Summary returns summarized string

@@ -51,7 +51,6 @@ func shapeNetwork(r *model.Report, pcidevs *pci.Devices) {
 		c.BondAttrs.FailOverMac = bd.BondAttrs.FailOverMac.String()
 		c.BondAttrs.XmitHashPolicy = bd.BondAttrs.XmitHashPolicy.String()
 		c.BondAttrs.LacpRate = bd.BondAttrs.LacpRate.String()
-		//c.BondAttrs.MiiStatus = bd.BondAttrs.MiiStatus
 
 		for _, ipaddress := range bd.AddrList {
 			ipaddr := new(model.IPAddress)
