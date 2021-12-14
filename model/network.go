@@ -8,6 +8,7 @@ import (
 // NetworkReport represents a network report
 type NetworkReport struct {
 	EthControllers []*EthController `json:"ethControllers,omitempty"`
+	BondInterfaces []*BondInterface `json:"bondInterfaces,omitempty"`
 }
 
 // EthController represents an ethernet controller

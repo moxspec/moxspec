@@ -1,6 +1,9 @@
 package main
 
 import (
+	"net"
+
+	"github.com/moxspec/moxspec/bonding"
 	"github.com/moxspec/moxspec/eth"
 	"github.com/moxspec/moxspec/model"
 	"github.com/moxspec/moxspec/netlink"
@@ -11,7 +14,68 @@ import (
 func shapeNetwork(r *model.Report, pcidevs *pci.Devices) {
 	r.Network = new(model.NetworkReport)
 
+	var bondings []*model.BondInterface
 	var controllers []*model.EthController
+
+	for _, bond := range bonding.GetBondDevices() {
+		c := new(model.BondInterface)
+		c.Name = bond
+
+		bd := bonding.NewDecoder(bond)
+		err := bd.Decode()
+		if err != nil {
+			log.Debug(err)
+			bondings = append(bondings, c)
+			continue
+		}
+
+		c.Slaves = bd.Slaves
+
+		c.LinkAttrs.State = bd.LinkAttrs.OperState.String()
+		c.LinkAttrs.HWAddr = bd.LinkAttrs.HardwareAddr.String()
+		c.LinkAttrs.MTU = bd.LinkAttrs.MTU
+		c.LinkAttrs.TxQLen = bd.LinkAttrs.TxQLen
+
+		c.BondAttrs.Mode = bd.BondAttrs.Mode.String()
+		c.BondAttrs.ActiveSlave = bd.BondAttrs.ActiveSlave
+		c.BondAttrs.Miimon = bd.BondAttrs.Miimon
+		c.BondAttrs.UpDelay = bd.BondAttrs.UpDelay
+		c.BondAttrs.DownDelay = bd.BondAttrs.DownDelay
+		c.BondAttrs.UseCarrier = bd.BondAttrs.UseCarrier
+		c.BondAttrs.ArpInterval = bd.BondAttrs.ArpInterval
+		c.BondAttrs.ArpIpTargets = bd.BondAttrs.ArpIpTargets
+		c.BondAttrs.ArpValidate = bd.BondAttrs.ArpValidate.String()
+		c.BondAttrs.ArpAllTargets = bd.BondAttrs.ArpAllTargets.String()
+		c.BondAttrs.Primary = bd.BondAttrs.Primary
+		c.BondAttrs.PrimaryReselect = bd.BondAttrs.PrimaryReselect.String()
+		c.BondAttrs.FailOverMac = bd.BondAttrs.FailOverMac.String()
+		c.BondAttrs.XmitHashPolicy = bd.BondAttrs.XmitHashPolicy.String()
+		c.BondAttrs.LacpRate = bd.BondAttrs.LacpRate.String()
+
+		for _, ipaddress := range bd.AddrList {
+			ipaddr := new(model.IPAddress)
+			ipaddr.Addr = ipaddress.IP.String()
+
+			if ipaddress.IP.To4() == nil {
+				ipaddr.Version = 6
+			} else {
+				ipaddr.Version = 4
+			}
+
+			ipaddr.Netmask = net.IP(ipaddress.Mask).String()
+
+			ipaddr.MaskSize, _ = ipaddress.Mask.Size()
+
+			ipaddr.Broadcast = ipaddress.Broadcast.String()
+
+			ipaddr.Network = ipaddress.IPNet.String()
+
+			c.LinkAttrs.IPAddrs = append(c.LinkAttrs.IPAddrs, ipaddr)
+		}
+
+		bondings = append(bondings, c)
+	}
+
 	for _, ctl := range pcidevs.FilterByClass(pci.NetworkController) {
 		c := new(model.EthController)
 		c.PCIBaseSpec = *shapePCIDevice(ctl)
@@ -81,4 +145,5 @@ func shapeNetwork(r *model.Report, pcidevs *pci.Devices) {
 	}
 
 	r.Network.EthControllers = controllers
+	r.Network.BondInterfaces = bondings
 }
