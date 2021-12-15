@@ -21,7 +21,7 @@ func TestParsePowerSupplyStats(t *testing.T) {
 		{0x05, false, false, true},
 		{0x06, false, true, false},
 		{0x07, false, true, true},
-		{0x248, true, false, false}, // As you know, 248 is the most important number of the world
+		{0x248, true, false, false},
 	}
 
 	for _, test := range tests {
