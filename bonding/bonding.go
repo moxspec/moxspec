@@ -15,6 +15,7 @@ type BondInterface struct {
 	BondAttrs BondAttrs
 }
 
+// BondAttrs represents bonding attributes
 type BondAttrs struct {
 	Mode            netlink.BondMode
 	ActiveSlave     string
@@ -23,7 +24,7 @@ type BondAttrs struct {
 	DownDelay       int
 	UseCarrier      int
 	ArpInterval     int
-	ArpIpTargets    []net.IP
+	ArpIPTargets    []net.IP
 	ArpValidate     netlink.BondArpValidate
 	ArpAllTargets   netlink.BondArpAllTargets
 	Primary         string
@@ -80,7 +81,7 @@ func (intf *BondInterface) Decode() error {
 		intf.BondAttrs.DownDelay = stats.DownDelay
 		intf.BondAttrs.UseCarrier = stats.UseCarrier
 		intf.BondAttrs.ArpInterval = stats.ArpInterval
-		intf.BondAttrs.ArpIpTargets = stats.ArpIpTargets
+		intf.BondAttrs.ArpIPTargets = stats.ArpIpTargets
 		intf.BondAttrs.ArpValidate = stats.ArpValidate
 		intf.BondAttrs.ArpAllTargets = stats.ArpAllTargets
 

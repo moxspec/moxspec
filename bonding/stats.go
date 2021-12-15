@@ -32,6 +32,7 @@ func findBondSlaves(index int) ([]string, error) {
 	return slaves, nil
 }
 
+// GetBondDevices returns a list of bonding devices
 func GetBondDevices() []string {
 	var bonds []string
 

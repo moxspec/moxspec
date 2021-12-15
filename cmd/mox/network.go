@@ -43,7 +43,7 @@ func shapeNetwork(r *model.Report, pcidevs *pci.Devices) {
 		c.BondAttrs.DownDelay = bd.BondAttrs.DownDelay
 		c.BondAttrs.UseCarrier = bd.BondAttrs.UseCarrier
 		c.BondAttrs.ArpInterval = bd.BondAttrs.ArpInterval
-		c.BondAttrs.ArpIpTargets = bd.BondAttrs.ArpIpTargets
+		c.BondAttrs.ArpIPTargets = bd.BondAttrs.ArpIPTargets
 		c.BondAttrs.ArpValidate = bd.BondAttrs.ArpValidate.String()
 		c.BondAttrs.ArpAllTargets = bd.BondAttrs.ArpAllTargets.String()
 		c.BondAttrs.Primary = bd.BondAttrs.Primary
