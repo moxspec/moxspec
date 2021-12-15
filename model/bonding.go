@@ -13,6 +13,7 @@ type BondInterface struct {
 	BondAttrs BondAttrs `json:"bond_attrs,omitempty"`
 }
 
+// LinkAttrs represents link attributes
 type LinkAttrs struct {
 	State   string       `json:"state,omitempty"`
 	HWAddr  string       `json:"hwaddr,omitempty"`
@@ -21,6 +22,7 @@ type LinkAttrs struct {
 	IPAddrs []*IPAddress `json:"ipaddrs,omitempty"`
 }
 
+// BondAttrs represents bonding attributes
 type BondAttrs struct {
 	Mode            string   `json:"mode,omitempty"`
 	ActiveSlave     string   `json:"active_slaves,omitempty"`
@@ -29,7 +31,7 @@ type BondAttrs struct {
 	DownDelay       int      `json:"downdelay,omitempty"`
 	UseCarrier      int      `json:"use_carrier,omitempty"`
 	ArpInterval     int      `json:"arp_interval,omitempty"`
-	ArpIpTargets    []net.IP `json:"arp_ip_target,omitempty"`
+	ArpIPTargets    []net.IP `json:"arp_ip_target,omitempty"`
 	ArpValidate     string   `json:"arp_validate,omitempty"`
 	ArpAllTargets   string   `json:"arp_all_targets,omitempty"`
 	Primary         string   `json:"primary,omitempty"`

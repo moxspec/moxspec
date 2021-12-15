@@ -17,8 +17,8 @@ func TestFindMSB(t *testing.T) {
 		{2, 1},
 		{4, 2},
 		{8, 3},
-		{248, 7},   // As you know, 248 is the most important number of the world
-		{0x248, 9}, // As you know, 248 is the most important number of the world
+		{248, 7},
+		{0x248, 9},
 		{"mox", -1},
 	}
 
